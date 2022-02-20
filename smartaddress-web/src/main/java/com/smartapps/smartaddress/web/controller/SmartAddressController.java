@@ -23,6 +23,8 @@ public class SmartAddressController extends BaseController {
 	/* Read - Read all */
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_ADDRESSES)
 	public ResponseEntity<List<AddressDto>> retrieveAddresses() {
+		System.out.println(">>> Caliing retrieveAddresses()");
+		log.debug(">>> SLF4J-LOG: Caliing retrieveAddresses()");
 		return ResponseEntity.ok().body(prepareAddresses(20));
 	}
 
