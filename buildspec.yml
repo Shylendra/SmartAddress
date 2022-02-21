@@ -18,6 +18,5 @@ artifacts:
   files:
     - smartaddress-web/target/smartaddress-web-1.0-SNAPSHOT.jar
     - appspec.yml
-    - scripts/start-process.sh
-    - scripts/stop-process.sh
+    - scripts/*
   discard-paths: yes
