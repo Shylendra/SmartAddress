@@ -10,10 +10,14 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn install
+      - mvn clean install
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
     - smartaddress-web/target/smartaddress-web-1.0-SNAPSHOT.jar
+    - appspec.yml
+    - scripts/start-process.sh
+    - scripts/stop-process.sh
+  discard-paths: yes
