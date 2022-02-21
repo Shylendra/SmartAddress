@@ -8,17 +8,17 @@ files:
 
 hooks:
   ApplicationStop:
-    - location: stop-server.sh
+    - location: scripts/stop-server.sh
       timeout: 300
       runas: root
   BeforeInstall:
-    - location: install_dependencies.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
-    - location: create_or_update_service.sh
+    - location: scripts/create_or_update_service.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: start-server.sh
+    - location: scripts/start-server.sh
       timeout: 300
       runas: root    
