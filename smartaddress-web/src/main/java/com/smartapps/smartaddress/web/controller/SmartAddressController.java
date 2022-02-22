@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.smartapps.smartaddress.shared.dto.AddressDto;
+import com.smartapps.smartaddress.jpa.dto.AddressDto;
 import com.smartapps.smartaddress.web.util.SmartAddressWebUtil;
 
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +25,7 @@ public class SmartAddressController extends BaseController {
 	public ResponseEntity<List<AddressDto>> retrieveAddresses() {
 		System.out.println(">>> Caliing retrieveAddresses()");
 		log.debug(">>> SLF4J-LOG: Caliing retrieveAddresses()");
-		return ResponseEntity.ok().body(prepareAddresses(20));
+		return ResponseEntity.ok().body(prepareAddresses(3));
 	}
 
 	private List<AddressDto> prepareAddresses(int count) {

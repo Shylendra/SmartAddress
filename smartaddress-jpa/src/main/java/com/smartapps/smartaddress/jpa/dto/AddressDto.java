@@ -1,4 +1,4 @@
-package com.smartapps.smartaddress.shared.dto;
+package com.smartapps.smartaddress.jpa.dto;
 
 import java.io.Serializable;
 
