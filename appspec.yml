@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: smartaddress-web-1.0-SNAPSHOT.jar
+  - source: /
     destination: /home/ec2-user
 
 hooks:
