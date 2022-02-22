@@ -4,13 +4,9 @@ os: linux
 
 files:
   - source: smartaddress-web-1.0-SNAPSHOT.jar
-    destination: /tmp
+    destination: /home/ec2-user
 
 hooks:
-  ApplicationStop:
-    - location: stop-server.sh
-      timeout: 300
-      runas: root
   BeforeInstall:
     - location: install_dependencies.sh
       timeout: 300
@@ -18,7 +14,16 @@ hooks:
     - location: create_or_update_service.sh
       timeout: 300
       runas: root
+  AfterInstall:
+    - location: fix_previleges.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: start-server.sh
       timeout: 300
       runas: root    
+  ApplicationStop:
+    - location: stop-server.sh
+      timeout: 300
+      runas: root
+      
