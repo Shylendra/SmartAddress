@@ -10,20 +10,20 @@ hooks:
   BeforeInstall:
     - location: install_dependencies.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
     - location: create_or_update_service.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
   AfterInstall:
     - location: fix_previleges.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
   ApplicationStart:
     - location: start-server.sh
       timeout: 300
-      runas: root    
+      runas: ec2-user    
   ApplicationStop:
     - location: stop-server.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
       
