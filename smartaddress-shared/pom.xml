@@ -38,7 +38,7 @@
 		<artifactId>spring-boot-starter-validation</artifactId>
 	</dependency>
 	
-	<!-- Tools -->
+	<!-- Miscellaneous -->
 	<dependency>
 		<groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>

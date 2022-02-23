@@ -61,7 +61,7 @@
 		<scope>test</scope>
 	</dependency>
 
-	<!-- Database/Tools -->
+	<!-- Miscellaneous -->
 	<dependency>
 		<groupId>com.h2database</groupId>
 		<artifactId>h2</artifactId>
