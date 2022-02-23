@@ -25,7 +25,7 @@ public class SmartAddressController extends BaseController {
 	public ResponseEntity<List<AddressDto>> retrieveAddresses() {
 		System.out.println(">>> Caliing retrieveAddresses()");
 		log.debug(">>> SLF4J-LOG: Caliing retrieveAddresses()");
-		return ResponseEntity.ok().body(prepareAddresses(3));
+		return ResponseEntity.ok().body(prepareAddresses(5));
 	}
 
 	private List<AddressDto> prepareAddresses(int count) {
