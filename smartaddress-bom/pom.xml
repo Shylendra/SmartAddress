@@ -21,6 +21,11 @@
   <dependencies>
 	<!-- SMARTAPP Dependencies -->
 	<dependency>
+	    <groupId>com.smartapps.smartlib</groupId>
+	    <artifactId>smartlibrary</artifactId>
+	    <version>1.0-SNAPSHOT</version>
+	</dependency>		
+	<dependency>
 	    <groupId>com.smartapps.smartaddress-shared</groupId>
 	    <artifactId>smartaddress-shared</artifactId>
 	    <version>1.0-SNAPSHOT</version>
