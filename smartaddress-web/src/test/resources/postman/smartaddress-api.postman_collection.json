@@ -1,0 +1,1331 @@
+{
+	"info": {
+		"_postman_id": "b7ae5199-857c-4389-9c1e-83f0c7e16231",
+		"name": "smartaddress-api",
+		"description": "SmartAddress REST API Information",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "smartaddress-api",
+			"item": [
+				{
+					"name": "{id}/address",
+					"item": [
+						{
+							"name": "/{id}/address",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:id/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":id",
+										"address"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successfully retrieved.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad request.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "You are not authorized to access the resource.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Accessing the resource you were trying to reach is forbidden.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "The resource you were trying to reach is not found.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/{id}/address/update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customerId\": 10,\n    \"addressLine1\": \"fn2-UPD\",\n    \"addressLine2\": \"fn2-UPD\",\n    \"city\": \"fn2-UPD\",\n    \"state\": \"fn2-UPD\",\n    \"country\": \"fn2-UPD\",\n    \"postalCode\": \"fn2-UPD\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:id/address/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":id",
+										"address",
+										"update"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successfully retrieved.",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad request.",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "You are not authorized to access the resource.",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Accessing the resource you were trying to reach is forbidden.",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "The resource you were trying to reach is not found.",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"update"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/{id}/address/delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:id/address/delete",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":id",
+										"address",
+										"delete"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successfully retrieved.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/delete",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "eu"
+								},
+								{
+									"name": "Bad request.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/delete",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "You are not authorized to access the resource.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/delete",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "eu"
+								},
+								{
+									"name": "Accessing the resource you were trying to reach is forbidden.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/delete",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "eu"
+								},
+								{
+									"name": "The resource you were trying to reach is not found.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/:id/address/delete",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												":id",
+												"address",
+												"delete"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-43584926",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerId\": 10,\n    \"addressLine1\": \"fn2\",\n    \"addressLine2\": \"fn2\",\n    \"city\": \"fn2\",\n    \"state\": \"fn2\",\n    \"country\": \"fn2\",\n    \"postalCode\": \"fn2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/smartaddress-api/address",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"smartaddress-api",
+								"address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successfully retrieved.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"address"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad request.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"address"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "You are not authorized to access the resource.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"address"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Accessing the resource you were trying to reach is forbidden.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"address"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "The resource you were trying to reach is not found.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -87877896,\n  \"customerId\": 76034063,\n  \"addressLine1\": \"fugiat ut id\",\n  \"addressLine2\": \"dolore sunt\",\n  \"city\": \"sed ex ipsum officia\",\n  \"state\": \"irure cillum ad ullamco aliqua\",\n  \"country\": \"nulla ex cupidatat proident ani\",\n  \"postalCode\": \"ex dolore deserunt\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"address"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/{custId}/addresses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/smartaddress-api/:custId/addresses",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"smartaddress-api",
+								":custId",
+								"addresses"
+							],
+							"variable": [
+								{
+									"key": "custId",
+									"value": "10",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successfully retrieved.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:custId/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":custId",
+										"addresses"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "-43584926",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad request.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:custId/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":custId",
+										"addresses"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "-43584926",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "You are not authorized to access the resource.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:custId/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":custId",
+										"addresses"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "-43584926",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Accessing the resource you were trying to reach is forbidden.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:custId/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":custId",
+										"addresses"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "-43584926",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "The resource you were trying to reach is not found.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/:custId/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										":custId",
+										"addresses"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "-43584926",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/addresses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/smartaddress-api/addresses",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"smartaddress-api",
+								"addresses"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successfully retrieved.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"addresses"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad request.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"addresses"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "You are not authorized to access the resource.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"addresses"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Accessing the resource you were trying to reach is forbidden.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"addresses"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "The resource you were trying to reach is not found.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"addresses"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

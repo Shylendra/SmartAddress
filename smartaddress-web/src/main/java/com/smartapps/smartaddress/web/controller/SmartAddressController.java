@@ -1,6 +1,5 @@
 package com.smartapps.smartaddress.web.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -53,8 +52,9 @@ public class SmartAddressController extends BaseController {
 			@ApiResponse(responseCode = "403", description = "Accessing the resource you were trying to reach is forbidden."),
 			@ApiResponse(responseCode = "404", description = "The resource you were trying to reach is not found.")})
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_ADDRESSES)
-	public ResponseEntity<List<AddressDto>> retrieveAll() {
-		return ResponseEntity.ok().body(prepareAddresses(5));
+	public ResponseEntity<List<AddressDto>> retrieveAll() 
+			throws JsonProcessingException {
+		return ResponseEntity.ok().body(addressServiceFacade.retrieveAll());
 	}
 
 	@Operation(summary = "Retrieve address by id")
@@ -110,25 +110,4 @@ public class SmartAddressController extends BaseController {
 		return ResponseEntity.ok().body("DELETED");
 	}
 	
-	private List<AddressDto> prepareAddresses(int count) {
-		List<AddressDto> addresses = new ArrayList<>();
-		for(int i=0;i<=count;i++) {
-			addresses.add(prepareAddress(i));
-		}
-		return addresses;
-	}
-	
-	private AddressDto prepareAddress(int id) {
-
-		return AddressDto.builder()
-				.id(id)
-				.customerId(id+1)
-				.addressLine1("addressLine"+id)
-				.addressLine2("addressLine"+ (id +1))
-				.city("city"+id)
-				.state("state"+id)
-				.country("country"+id)
-				.postalCode("postalCode"+id).build();
-				
-	}
 }
