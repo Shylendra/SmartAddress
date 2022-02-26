@@ -2,10 +2,10 @@ package com.smartapps.smartaddress.web.service.facade;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import javax.transaction.Transactional;
 
+import org.codehaus.plexus.util.StringUtils;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -25,8 +25,17 @@ public class AddressServiceFacadeImpl extends BaseServiceFacade implements Addre
 	public AddressDto register(AddressDto obj) throws JsonProcessingException {
 		log.info(String.format(" %s = register() REQUEST: %n %s ", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA,
 				SmartLibraryUtil.mapToString(obj, true)));
-		
-		AddressDto response = SmartLibraryUtil.map(addressService.create(SmartLibraryUtil.map(obj, Address.class)).get(), AddressDto.class);
+		Address entityObj = SmartLibraryUtil.map(obj, Address.class);
+		if(StringUtils.isNotEmpty(obj.getStartDate())) {
+			entityObj.setStartDate(obj.getSqlStartDate());
+		}
+		if(StringUtils.isNotEmpty(obj.getEndDate())) {
+			entityObj.setEndDate(obj.getSqlEndDate());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcTs())) {
+			entityObj.setProcTs(obj.getSqlProcTs());
+		}
+		AddressDto response = SmartLibraryUtil.map(addressService.create(entityObj).get(), AddressDto.class);
 		
 		log.info(String.format(" %s = register() RESPONSE: %n %s ", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA,
 				response));
@@ -78,8 +87,17 @@ public class AddressServiceFacadeImpl extends BaseServiceFacade implements Addre
 	public AddressDto update(AddressDto obj) throws JsonProcessingException {
 		log.info(String.format(" %s = update() REQUEST: %n %s ", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA,
 				SmartLibraryUtil.mapToString(obj, true)));
-		
-		AddressDto response = SmartLibraryUtil.map(addressService.update(SmartLibraryUtil.map(obj, Address.class)).get(), AddressDto.class);
+		Address addressToUpdate = SmartLibraryUtil.map(obj, Address.class);
+		if(StringUtils.isNotEmpty(obj.getStartDate())) {
+			addressToUpdate.setStartDate(obj.getSqlStartDate());
+		}
+		if(StringUtils.isNotEmpty(obj.getEndDate())) {
+			addressToUpdate.setEndDate(obj.getSqlEndDate());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcTs())) {
+			addressToUpdate.setProcTs(obj.getSqlProcTs());
+		}
+		AddressDto response = SmartLibraryUtil.map(addressService.update(addressToUpdate).get(), AddressDto.class);
 		
 		log.info(String.format(" %s = update() RESPONSE: %n %s ", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA,
 				response));

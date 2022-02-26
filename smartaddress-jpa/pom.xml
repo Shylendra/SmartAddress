@@ -44,6 +44,10 @@
 	    <groupId>com.smartapps.smartaddress-shared</groupId>
 	    <artifactId>smartaddress-shared</artifactId>
 	</dependency>
+	<dependency>
+		<groupId>com.smartapps.smartlib</groupId>
+		<artifactId>smartlibrary</artifactId>
+	</dependency>
 	
 	<!-- SPRINGBOOT -->
 	<dependency>

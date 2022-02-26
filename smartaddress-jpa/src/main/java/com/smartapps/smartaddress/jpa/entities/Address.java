@@ -1,6 +1,8 @@
 package com.smartapps.smartaddress.jpa.entities;
 
 import java.io.Serializable;
+import java.sql.Date;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.smartapps.smartlib.util.SmartDateUtil;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -49,5 +53,14 @@ public class Address implements Serializable, BaseEntity<Address> {
 	
 	@Column(name = "POSTAL_CODE")
 	private String postalCode;
+
+	@Column(name = "START_DATE")
+	private Date startDate = SmartDateUtil.getCurrentSystemDate();
+
+	@Column(name = "END_DATE")
+	private Date endDate = SmartDateUtil.getCurrentSystemDate();
+
+	@Column(name = "PROC_TS")
+	private Timestamp procTs = SmartDateUtil.getCurrentSystemTimestamp();
 
 }
