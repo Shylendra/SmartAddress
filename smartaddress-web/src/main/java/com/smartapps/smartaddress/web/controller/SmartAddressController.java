@@ -31,7 +31,6 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping(SmartAddressWebUtil.CONTEXT_ROOT)
 public class SmartAddressController extends BaseController {
 
-
 	@Operation(summary = "Register address")
 	@ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Successfully retrieved."), 
 			@ApiResponse(responseCode = "400", description = "Bad request."),

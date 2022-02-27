@@ -32,6 +32,8 @@ public class AddressDto implements Serializable {
 	private String postalCode;
 	private String startDate;
 	private String endDate;
+	private String latitude;
+	private String longitude;
 	private String procTs;
 
 	@JsonIgnore

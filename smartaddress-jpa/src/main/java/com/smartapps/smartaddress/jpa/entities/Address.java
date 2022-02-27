@@ -54,6 +54,12 @@ public class Address implements Serializable, BaseEntity<Address> {
 	@Column(name = "POSTAL_CODE")
 	private String postalCode;
 
+	@Column(name = "LATITUDE")
+	private String latitude;
+	
+	@Column(name = "LONGITUDE")
+	private String longitude;
+
 	@Column(name = "START_DATE")
 	private Date startDate = SmartDateUtil.getCurrentSystemDate();
 

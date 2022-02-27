@@ -73,6 +73,12 @@ public class AddressServiceImpl implements AddressService {
 		if(StringUtils.isNotEmpty(obj.getPostalCode())) {
 			entityObj.setPostalCode(obj.getPostalCode());
 		}
+		if(StringUtils.isNotEmpty(obj.getLatitude())) {
+			entityObj.setLatitude(obj.getLatitude());
+		}
+		if(StringUtils.isNotEmpty(obj.getLongitude())) {
+			entityObj.setLongitude(obj.getLongitude());
+		}
 		
 		return Optional.of(addressRepository.save(entityObj));
 	}
