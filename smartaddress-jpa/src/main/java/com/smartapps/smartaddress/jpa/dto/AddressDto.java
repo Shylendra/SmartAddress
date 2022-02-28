@@ -7,6 +7,7 @@ import java.sql.Timestamp;
 import org.apache.commons.lang.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.smartapps.smartlib.dto.BaseDto;
 import com.smartapps.smartlib.util.SmartDateUtil;
 
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AddressDto implements Serializable {
+public class AddressDto extends BaseDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -34,7 +35,6 @@ public class AddressDto implements Serializable {
 	private String endDate;
 	private String latitude;
 	private String longitude;
-	private String procTs;
 
 	@JsonIgnore
 	public Date getSqlStartDate() {
@@ -50,14 +50,6 @@ public class AddressDto implements Serializable {
 			return SmartDateUtil.parseDate(endDate);
 		}
 		return SmartDateUtil.getCurrentSystemDate();
-	}
-
-	@JsonIgnore
-	public Timestamp getSqlProcTs() {
-		if(StringUtils.isNotEmpty(procTs)) {
-			return SmartDateUtil.parseTimestamp(procTs);
-		}
-		return SmartDateUtil.getCurrentSystemTimestamp();
 	}
 	
 }

@@ -11,11 +11,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.smartapps.smartlib.entities.BaseEntity;
 import com.smartapps.smartlib.util.SmartDateUtil;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -24,7 +26,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "SMART_ADDRESS")
-public class Address implements Serializable, BaseEntity<Address> {
+@EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = true)
+public class Address extends BaseEntity implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
@@ -65,8 +68,5 @@ public class Address implements Serializable, BaseEntity<Address> {
 
 	@Column(name = "END_DATE")
 	private Date endDate = SmartDateUtil.getCurrentSystemDate();
-
-	@Column(name = "PROC_TS")
-	private Timestamp procTs = SmartDateUtil.getCurrentSystemTimestamp();
 
 }
