@@ -1,5 +1,6 @@
 package com.smartapps.smartaddress.web.config;
 
+import static com.smartapps.smartlib.util.SmartLibraryUtil.createErrorResponse;
 import static java.util.Arrays.asList;
 
 import java.util.List;
@@ -21,7 +22,6 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import com.smartapps.smartlib.exception.ResourceNotFoundException;
-import com.smartapps.smartlib.util.SmartLibraryUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -33,13 +33,13 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(ResourceNotFoundException.class)
 	@ResponseStatus(value = HttpStatus.NOT_FOUND)
 	protected ResponseEntity<Object> resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
-		return SmartLibraryUtil.createErrorResponse(HttpStatus.NOT_FOUND, asList(ex.getMessage()), new HttpHeaders());
+		return createErrorResponse(HttpStatus.NOT_FOUND, asList(ex.getMessage()), new HttpHeaders());
 	}
 
 	@ExceptionHandler(ConstraintViolationException.class)
 	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
 	protected ResponseEntity<Object> constraintViolationException(ConstraintViolationException ex, WebRequest request) {
-		return SmartLibraryUtil.createErrorResponse(HttpStatus.BAD_REQUEST, asList(ex.getMessage()), new HttpHeaders());
+		return createErrorResponse(HttpStatus.BAD_REQUEST, asList(ex.getMessage()), new HttpHeaders());
 	}
 
     @Override
@@ -52,7 +52,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
     			.getAllErrors()
     			.stream().map(ObjectError::getDefaultMessage)
     			.collect(Collectors.toList());
-    	return SmartLibraryUtil.createErrorResponse(status, errors, headers);
+    	return createErrorResponse(status, errors, headers);
 	}
 	
 }

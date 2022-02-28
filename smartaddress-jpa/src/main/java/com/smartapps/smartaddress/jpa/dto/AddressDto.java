@@ -2,7 +2,6 @@ package com.smartapps.smartaddress.jpa.dto;
 
 import java.io.Serializable;
 import java.sql.Date;
-import java.sql.Timestamp;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -10,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.smartapps.smartlib.dto.BaseDto;
 import com.smartapps.smartlib.util.SmartDateUtil;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,6 +19,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Schema(name = "Address")
 public class AddressDto extends BaseDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
