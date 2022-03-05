@@ -6,7 +6,7 @@ import java.sql.Date;
 import org.apache.commons.lang.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.smartapps.smartlib.dto.BaseDto;
+import com.smartapps.smartlib.dto.CommonDto;
 import com.smartapps.smartlib.util.SmartDateUtil;
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Schema(name = "Address")
-public class AddressDto extends BaseDto implements Serializable {
+public class AddressDto extends CommonDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	

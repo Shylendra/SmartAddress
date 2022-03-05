@@ -19,7 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Service
 @Transactional
-public class AddressServiceFacadeImpl extends BaseServiceFacade implements AddressServiceFacade {
+public class AddressServiceFacadeImpl extends CommonServiceFacade implements AddressServiceFacade {
 
 	@Override
 	public AddressDto register(AddressDto obj) throws JsonProcessingException {

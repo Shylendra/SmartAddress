@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.smartapps.smartlib.converter.TrimConverter;
-import com.smartapps.smartlib.entities.BaseEntity;
+import com.smartapps.smartlib.entities.CommonEntity;
 import com.smartapps.smartlib.util.SmartDateUtil;
 
 import lombok.AllArgsConstructor;
@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "SMART_ADDRESS")
 @EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = true)
-public class Address extends BaseEntity implements Serializable {
+public class Address extends CommonEntity implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 

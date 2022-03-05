@@ -736,7 +736,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"customerId\": 10,\n    \"addressLine1\": \"fn2\",\n    \"addressLine2\": \"fn2\",\n    \"city\": \"fn2\",\n    \"state\": \"fn2\",\n    \"country\": \"fn2\",\n    \"postalCode\": \"fn2\"\n}",
+							"raw": "{\n    \"customerId\": 10,\n    \"addressLine1\": \"fn2\",\n    \"addressLine2\": \"fn2\",\n    \"city\": \"fn2\",\n    \"state\": \"fn2\",\n    \"country\": \"fn2\",\n    \"postalCode\": \"fn2\",\n    \"startDate\": \"2022-02-26\",\n    \"endDate\": \"2022-02-26\",\n    \"latitude\": \"latitude2\",\n    \"longitude\": \"longitude2\",\n    \"procTs\": \"2020-05-01 12:30:00\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"

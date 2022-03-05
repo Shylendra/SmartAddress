@@ -32,7 +32,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @Validated
 @RequestMapping(SmartAddressWebUtil.CONTEXT_ROOT)
-public class SmartAddressController extends BaseController {
+public class SmartAddressController extends CommonController {
 
 	@Operation(summary = "Register address")
 	@ApiResponses(value = {@ApiResponse(responseCode = "200", description = "Successfully retrieved."), 
