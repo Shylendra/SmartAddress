@@ -1,7 +1,9 @@
 package com.smartapps.smartaddress.web.controller;
 
+import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.smartapps.smartaddress.jpa.dto.AddressDto;
 import com.smartapps.smartaddress.web.util.SmartAddressWebUtil;
 
@@ -51,8 +54,8 @@ public class SmartAddressController extends BaseController {
 			@ApiResponse(responseCode = "403", description = "Accessing the resource you were trying to reach is forbidden."),
 			@ApiResponse(responseCode = "404", description = "The resource you were trying to reach is not found.")})
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_ADDRESSES)
-	public ResponseEntity<List<AddressDto>> retrieveAll() 
-			throws JsonProcessingException {
+	public ResponseEntity<List<AddressDto>> retrieveAll(HttpServletRequest request) 
+			throws IOException, GeoIp2Exception {
 		return ResponseEntity.ok().body(addressServiceFacade.retrieveAll());
 	}
 

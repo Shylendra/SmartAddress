@@ -32,13 +32,13 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(ResourceNotFoundException.class)
 	@ResponseStatus(value = HttpStatus.NOT_FOUND)
-	protected ResponseEntity<Object> resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
+	public ResponseEntity<Object> resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
 		return createErrorResponse(HttpStatus.NOT_FOUND, asList(ex.getMessage()), new HttpHeaders());
 	}
 
 	@ExceptionHandler(ConstraintViolationException.class)
 	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
-	protected ResponseEntity<Object> constraintViolationException(ConstraintViolationException ex, WebRequest request) {
+	public ResponseEntity<Object> constraintViolationException(ConstraintViolationException ex, WebRequest request) {
 		return createErrorResponse(HttpStatus.BAD_REQUEST, asList(ex.getMessage()), new HttpHeaders());
 	}
 

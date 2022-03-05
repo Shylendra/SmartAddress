@@ -21,7 +21,10 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Configuration
 @Aspect
-@ComponentScan({"com.smartapps.smartaddress.shared.*","com.smartapps.smartaddress.jpa.*","com.smartapps.smartaddress.web.*"})
+@ComponentScan({"com.smartapps.smartaddress.shared.*",
+	"com.smartapps.smartaddress.jpa.*",
+	"com.smartapps.smartaddress.web.*",
+	"com.smartapps.smartlib.*"})
 @EntityScan("com.smartapps.smartaddress.jpa.entities")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = { "com.smartapps.smartaddress.jpa.repository" })

@@ -111,6 +111,10 @@
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>com.maxmind.geoip2</groupId>
+		    <artifactId>geoip2</artifactId>
+		</dependency>
 
 		<!-- Unit/Integration Test tools -->
 		<dependency>
