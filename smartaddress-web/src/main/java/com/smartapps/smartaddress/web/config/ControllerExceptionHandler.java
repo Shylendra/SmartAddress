@@ -33,12 +33,14 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(ResourceNotFoundException.class)
 	@ResponseStatus(value = HttpStatus.NOT_FOUND)
 	public ResponseEntity<Object> resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
+		log.info("ControllerExceptionHandler::resourceNotFoundException()::ResourceNotFoundException");
 		return createErrorResponse(HttpStatus.NOT_FOUND, asList(ex.getMessage()), new HttpHeaders());
 	}
 
 	@ExceptionHandler(ConstraintViolationException.class)
 	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
 	public ResponseEntity<Object> constraintViolationException(ConstraintViolationException ex, WebRequest request) {
+		log.info("ControllerExceptionHandler::constraintViolationException()::ConstraintViolationException");
 		return createErrorResponse(HttpStatus.BAD_REQUEST, asList(ex.getMessage()), new HttpHeaders());
 	}
 
@@ -48,6 +50,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
                                                      HttpStatus status, 
                                                      WebRequest request) {
 
+		log.info("ControllerExceptionHandler::handleMethodArgumentNotValid()");
     	List<String> errors = ex.getBindingResult()
     			.getAllErrors()
     			.stream().map(ObjectError::getDefaultMessage)

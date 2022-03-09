@@ -39,3 +39,10 @@ springdoc:
     displayRequestDuration: true
     tagsSorter: alpha
   version: '@project.version@'
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    info:
+      enabled: true      
