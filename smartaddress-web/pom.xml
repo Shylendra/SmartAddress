@@ -18,7 +18,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<java.version>1.8</java.version>
-		<docker.repository>shylendra2015/smartaddress</docker.repository>
+		<!-- <docker.repository>shylendra2015/smartaddress</docker.repository>  -->
 	</properties>
 
 	<repositories>
