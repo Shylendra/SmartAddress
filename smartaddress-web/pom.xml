@@ -163,6 +163,8 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!-- Not needed: This is already configured in github Actions -->
+			<!-- 
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
@@ -185,6 +187,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 		</plugins>
 
 	</build>
