@@ -18,8 +18,9 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<java.version>1.8</java.version>
+		<docker.repository>shylendra2015/smartaddress</docker.repository>
 	</properties>
-	
+
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>
@@ -46,12 +47,8 @@
 			<artifactId>SmartLibrary</artifactId>
 			<version>${smart-library.version}</version>
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>com.smartapps.smartlib</groupId>
-			<artifactId>smartlibrary</artifactId>
-		</dependency>
-		 -->
+		<!-- <dependency> <groupId>com.smartapps.smartlib</groupId> <artifactId>smartlibrary</artifactId> 
+			</dependency> -->
 		<dependency>
 			<groupId>com.smartapps.smartaddress-shared</groupId>
 			<artifactId>smartaddress-shared</artifactId>
@@ -126,8 +123,8 @@
 			<artifactId>modelmapper</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>com.maxmind.geoip2</groupId>
-		    <artifactId>geoip2</artifactId>
+			<groupId>com.maxmind.geoip2</groupId>
+			<artifactId>geoip2</artifactId>
 		</dependency>
 
 		<!-- Unit/Integration Test tools -->
@@ -165,6 +162,28 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.3</version>
+				<configuration>
+					<repository>${docker.repository}</repository>
+					<tag>${project.version}</tag>
+					<buildArgs>
+						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+					</buildArgs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default</id>
+						<phase>install</phase>
+						<goals>
+							<goal>build</goal>
+							<goal>push</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 

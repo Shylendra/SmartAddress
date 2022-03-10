@@ -50,8 +50,9 @@
 
 		<!-- Smartapp dependencies -->
 		<dependency>
-			<groupId>com.smartapps.smartaddress-shared</groupId>
-			<artifactId>smartaddress-shared</artifactId>
+			<groupId>com.github.Shylendra</groupId>
+			<artifactId>SmartLibrary</artifactId>
+			<version>${smart-library.version}</version>
 		</dependency>
 		<!-- 
 		<dependency> 
@@ -60,9 +61,8 @@
 		</dependency> 
 		-->
 		<dependency>
-			<groupId>com.github.Shylendra</groupId>
-			<artifactId>SmartLibrary</artifactId>
-			<version>0d7e8cf0</version>
+			<groupId>com.smartapps.smartaddress-shared</groupId>
+			<artifactId>smartaddress-shared</artifactId>
 		</dependency>
 		
 		<!-- SPRINGBOOT -->
@@ -107,6 +107,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>smartaddress-jpa</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
