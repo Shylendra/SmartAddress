@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.smartapps.smartaddress-jpa</groupId>
-  <artifactId>smartaddress-jpa</artifactId>
-  <packaging>jar</packaging>
-  <name>Smartaddress-jpa</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.smartapps.smartaddress-jpa</groupId>
+	<artifactId>smartaddress-jpa</artifactId>
+	<packaging>jar</packaging>
+	<name>Smartaddress-jpa</name>
 
-  <parent>
-    <artifactId>smartaddress</artifactId>
-    <groupId>com.smartapps.smartaddress</groupId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
+	<parent>
+		<artifactId>smartaddress</artifactId>
+		<groupId>com.smartapps.smartaddress</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-	<java.version>1.8</java.version>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
@@ -31,66 +40,73 @@
 		</dependencies>
 	</dependencyManagement>
 
-  <dependencies>
-	<!-- Jacoco -->
-	<dependency>
-		<groupId>org.jacoco</groupId>
-		<artifactId>jacoco-maven-plugin</artifactId>
-		<version>0.8.6</version>
-	</dependency>
-	
-	<!-- Smartapp dependencies -->
-	<dependency>
-	    <groupId>com.smartapps.smartaddress-shared</groupId>
-	    <artifactId>smartaddress-shared</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>com.smartapps.smartlib</groupId>
-		<artifactId>smartlibrary</artifactId>
-	</dependency>
-	
-	<!-- SPRINGBOOT -->
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-data-jpa</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-tomcat</artifactId>
-		<scope>provided</scope>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-		<scope>test</scope>
-	</dependency>
+	<dependencies>
+		<!-- Jacoco -->
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.6</version>
+		</dependency>
 
-	<!-- Miscellaneous -->
-	<dependency>
-		<groupId>com.h2database</groupId>
-		<artifactId>h2</artifactId>
-		<scope>runtime</scope>
-	</dependency>
-	<dependency>
-		<groupId>mysql</groupId>
-		<artifactId>mysql-connector-java</artifactId>
-		<scope>runtime</scope>
-	</dependency>
-	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<optional>true</optional>
-	</dependency>
-	
-	<!-- Unit/Integration Test tools -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+		<!-- Smartapp dependencies -->
+		<dependency>
+			<groupId>com.smartapps.smartaddress-shared</groupId>
+			<artifactId>smartaddress-shared</artifactId>
+		</dependency>
+		<!-- 
+		<dependency> 
+			<groupId>com.smartapps.smartlib</groupId> 
+			<artifactId>smartlibrary</artifactId> 
+		</dependency> 
+		-->
+		<dependency>
+			<groupId>com.github.Shylendra</groupId>
+			<artifactId>SmartLibrary</artifactId>
+			<version>0d7e8cf0</version>
+		</dependency>
+		
+		<!-- SPRINGBOOT -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
-  <build>
+		<!-- Miscellaneous -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- Unit/Integration Test tools -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
@@ -106,6 +122,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-  </build>
+	</build>
 
 </project>

@@ -22,6 +22,7 @@
 	<java.version>1.8</java.version>
 	<checkstyle.skip>true</checkstyle.skip>
 	<jacoco.version>0.8.5</jacoco.version>
+	<smart-library.version>0d7e8cf0</smart-library.version>
   </properties>
 
   <modules>  
@@ -149,6 +150,26 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- 
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.3</version>
+				<executions>
+					<execution>
+						<id>default</id>
+						<goals>
+							<goal>build</goal>
+							<goal>push</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<repository>shylendra2015/smartaddress</repository>
+					<tag>${project.version}</tag>
+				</configuration>
+			</plugin>	
+			 -->		
 		</plugins>
 	</build>
 
