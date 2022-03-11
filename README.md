@@ -1,2 +1,2 @@
 # SmartAddress
-SmartAddress
+SmartAddress-test
