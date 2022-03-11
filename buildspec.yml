@@ -1,25 +1,20 @@
 version: 0.2
-
 phases:
   install:
-    runtime-versions:
-      java: corretto8
+    commands:
+      - echo install step...
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo logging in to AWS ECR...
+      - $(aws ecr get-login --no-include-email --region ap-southeast-2)
   build:
     commands:
-      - echo Build started on `date`
-      - mvn install
+      - echo build Docker image on `date`
+      - cd src
+      - docker build -t smartaddress:latest .
+      - docker tag smartaddress:latest 151776671846.dkr.ecr.ap-southeast-2.amazonaws.com/smartaddress:latest
   post_build:
     commands:
-      - echo Build completed on `date`
-artifacts:
-  files:
-    - smartaddress-web/target/smartaddress-web-1.0-SNAPSHOT.jar
-    - appspec.yml
-    - scripts/*
-  discard-paths: yes
-cache:
-  paths:
-  - '/root/.m2/**/*'
+      - echo build Docker image complete `date`
+      - echo push latest Docker images to ECR...
+      - docker push 151776671846.dkr.ecr.ap-southeast-2.amazonaws.com/smartaddress:latest
