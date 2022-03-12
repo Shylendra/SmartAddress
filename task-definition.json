@@ -1,0 +1,29 @@
+{
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "inferenceAccelerators": [],
+    "containerDefinitions": [
+        {
+            "name": "smartaddress",
+            "image": "151776671846.dkr.ecr.ap-southeast-2.amazonaws.com/smartaddress:latest",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": "8080",
+                    "protocol": "tcp"
+                }
+                
+            ]
+        }
+    ],
+    "volumes": [],
+    "networkMode": "awsvpc",
+    "memory": "512",
+    "cpu": "256",
+    "executionRoleArn": "arn:aws:iam::151776671846:role/smartaddress-task-execution-role",
+    "family": "first-run-task-definition",
+    "taskRoleArn": "",
+    "placementConstraints": []
+}
