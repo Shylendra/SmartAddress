@@ -55,6 +55,9 @@ public class AddressServiceImpl implements AddressService {
 		Address entityObj = readById(obj.getId());
 		entityObj.setCustomerId(obj.getCustomerId());
 		
+		if(StringUtils.isNotEmpty(obj.getAppId())) {
+			entityObj.setAppId(obj.getAppId());
+		}
 		if(StringUtils.isNotEmpty(obj.getAddressLine1())) {
 			entityObj.setAddressLine1(obj.getAddressLine1());
 		}

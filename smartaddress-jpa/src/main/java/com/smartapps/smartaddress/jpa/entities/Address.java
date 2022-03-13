@@ -40,6 +40,10 @@ public class Address extends CommonEntity implements Serializable {
 	@Column(name = "CUSTOMER_ID")
 	private int customerId;
 	
+	@Column(name = "APP_ID")
+	@Convert(converter = TrimConverter.class)
+	private String appId;
+	
 	@Column(name = "ADDRESS_LINE1")
 	@Convert(converter = TrimConverter.class)
 	private String addressLine1;

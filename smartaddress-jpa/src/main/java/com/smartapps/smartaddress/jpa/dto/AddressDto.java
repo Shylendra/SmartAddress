@@ -26,6 +26,7 @@ public class AddressDto extends CommonDto implements Serializable {
 	
 	private int id;
 	private int customerId;
+	private String appId;
 	private String addressLine1;
 	private String addressLine2;
 	private String city;
