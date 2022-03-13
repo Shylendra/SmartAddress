@@ -32,6 +32,8 @@
 	</dependencyManagement>
 
   <dependencies>
+    <!-- SMARTAPP Dependencies -->
+  
 	<!-- SPRINGBOOT -->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>

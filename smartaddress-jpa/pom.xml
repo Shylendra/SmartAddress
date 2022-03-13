@@ -41,25 +41,12 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<!-- Jacoco -->
-		<dependency>
-			<groupId>org.jacoco</groupId>
-			<artifactId>jacoco-maven-plugin</artifactId>
-			<version>0.8.6</version>
-		</dependency>
-
-		<!-- Smartapp dependencies -->
+		<!-- SMARTAPP Dependencies -->
 		<dependency>
 			<groupId>com.github.Shylendra</groupId>
 			<artifactId>SmartLibrary</artifactId>
 			<version>${smart-library.version}</version>
 		</dependency>
-		<!-- 
-		<dependency> 
-			<groupId>com.smartapps.smartlib</groupId> 
-			<artifactId>smartlibrary</artifactId> 
-		</dependency> 
-		-->
 		<dependency>
 			<groupId>com.smartapps.smartaddress-shared</groupId>
 			<artifactId>smartaddress-shared</artifactId>
@@ -96,6 +83,10 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
 		</dependency>
 
 		<!-- Unit/Integration Test tools -->
