@@ -26,7 +26,7 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 		log.info(String.format(" %s = register() REQUEST: %n %s ", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA,
 				SmartLibraryUtil.mapToString(obj, true)));
 		Address entityObj = SmartLibraryUtil.map(obj, Address.class);
-		entityObj.setAddressLine1(entityObj.getAddressLine1() + "_VERSION_JaiGanesha_1");
+		entityObj.setAddressLine1(entityObj.getAddressLine1() + "_SUCCESSFUL_REFRESH_1");
 		if(StringUtils.isNotEmpty(obj.getStartDate())) {
 			entityObj.setStartDate(obj.getSqlStartDate());
 		}
