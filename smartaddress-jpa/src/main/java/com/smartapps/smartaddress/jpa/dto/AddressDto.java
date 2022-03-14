@@ -6,8 +6,10 @@ import java.sql.Date;
 import org.apache.commons.lang.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.smartapps.smartlib.dto.CommonDto;
 import com.smartapps.smartlib.util.SmartDateUtil;
+import com.smartapps.smartlib.util.SmartLibraryUtil;
 import com.smartapps.smartlib.validators.annotations.ValidAppId;
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -42,6 +44,7 @@ public class AddressDto extends CommonDto implements Serializable {
 	private String latitude;
 	private String longitude;
 
+	
 	@JsonIgnore
 	public Date getSqlStartDate() {
 		if(StringUtils.isNotEmpty(startDate)) {
@@ -56,6 +59,16 @@ public class AddressDto extends CommonDto implements Serializable {
 			return SmartDateUtil.parseDate(endDate);
 		}
 		return SmartDateUtil.getCurrentSystemDate();
+	}
+
+	@Override
+	public String toString() {
+		try {
+			return SmartLibraryUtil.mapToString(this, true);
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 }

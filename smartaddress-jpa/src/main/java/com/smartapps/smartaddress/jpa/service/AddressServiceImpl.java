@@ -9,8 +9,9 @@ import org.springframework.stereotype.Service;
 
 import com.smartapps.smartaddress.jpa.entities.Address;
 import com.smartapps.smartaddress.jpa.repository.AddressRepository;
-import com.smartapps.smartaddress.jpa.util.SmartAddressJpaUtil;
 import com.smartapps.smartlib.exception.ResourceNotFoundException;
+import com.smartapps.smartlib.service.MessageService;
+import com.smartapps.smartlib.util.SharedMessages;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,25 +20,42 @@ import lombok.extern.slf4j.Slf4j;
 public class AddressServiceImpl implements AddressService {
 
 	@Autowired
-	private AddressRepository addressRepository;
+	private AddressRepository repository;
+	
+	@Autowired
+	private MessageService messageService;
 
 	@Override
 	public Optional<Address> create(Address obj) {
-		log.info(String.format(" %s = create()", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA));
-		return Optional.of(addressRepository.save(obj));
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		return Optional.of(repository.save(obj));
 	}
 
 	@Override
 	public List<Address> readAll() {
-		return addressRepository.findAll();
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		return repository.findAll();
 	}
 
 	@Override
 	public Address readById(Integer id) {
-		log.info(String.format(" %s = readById(%s", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA, id));
-		Optional<Address> entityObj = addressRepository.findById(id);
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		Optional<Address> entityObj = repository.findById(id);
 		if(!entityObj.isPresent()) {
-			throw new ResourceNotFoundException("Address not found with id = " + id);
+			throw new ResourceNotFoundException(messageService.getMessage("api.error.resource.not.found", 
+					new Object[]{entityObj.get().getClass().getSimpleName(),id}));
 		}
 		
 		return entityObj.get();
@@ -45,13 +63,22 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public List<Address> readByCustomerId(Integer custId) {
-		log.info(String.format(" %s = readByCustomerId(%s", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA, custId));
-		return addressRepository.findByCustomerId(custId);
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		return repository.findByCustomerId(custId);
 	}
 
 	@Override
 	public Optional<Address> update(Address obj) {
-		log.info(String.format(" %s = update()", SmartAddressJpaUtil.LOGPREFIX_SMART_ADDRESS_JPA));
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		
 		Address entityObj = readById(obj.getId());
 		entityObj.setCustomerId(obj.getCustomerId());
 		
@@ -83,12 +110,18 @@ public class AddressServiceImpl implements AddressService {
 			entityObj.setLongitude(obj.getLongitude());
 		}
 		
-		return Optional.of(addressRepository.save(entityObj));
+		return Optional.of(repository.save(entityObj));
 	}
 
 	@Override
 	public void deleteById(Integer id) {
-		addressRepository.deleteById(readById(id).getId());
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+
+		repository.deleteById(readById(id).getId());
 	}
 
 }

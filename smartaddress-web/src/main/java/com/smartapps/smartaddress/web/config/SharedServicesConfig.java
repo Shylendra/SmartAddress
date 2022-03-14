@@ -7,6 +7,8 @@ import com.smartapps.smartlib.service.ClientDetailsService;
 import com.smartapps.smartlib.service.ClientDetailsServiceImpl;
 import com.smartapps.smartlib.service.CsvService;
 import com.smartapps.smartlib.service.CsvServiceImpl;
+import com.smartapps.smartlib.service.MessageService;
+import com.smartapps.smartlib.service.MessageServiceImpl;
 
 @Configuration
 public class SharedServicesConfig {
@@ -19,6 +21,11 @@ public class SharedServicesConfig {
 	@Bean
 	public ClientDetailsService clientDetailsService() {
 		return new ClientDetailsServiceImpl();
+	}
+
+	@Bean
+	public MessageService messageService() {
+		return new MessageServiceImpl();
 	}
 
 }
