@@ -24,6 +24,8 @@ public class AddressServiceImpl implements AddressService {
 	
 	@Autowired
 	private MessageService messageService;
+	
+	private static final String ENTITY_NAME = "Address";
 
 	@Override
 	public Optional<Address> create(Address obj) {
@@ -54,8 +56,8 @@ public class AddressServiceImpl implements AddressService {
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
 		Optional<Address> entityObj = repository.findById(id);
 		if(!entityObj.isPresent()) {
-			throw new ResourceNotFoundException(messageService.getMessage("api.error.resource.not.found", 
-					new Object[]{entityObj.get().getClass().getSimpleName(),id}));
+			throw new ResourceNotFoundException(messageService.getMessage(SharedMessages.ERR001_RESOURCE_NOTFOUND, 
+					new Object[]{ENTITY_NAME,id}));
 		}
 		
 		return entityObj.get();

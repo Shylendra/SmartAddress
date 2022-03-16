@@ -2,7 +2,9 @@ package com.smartapps.smartaddress.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
+import com.smartapps.smartlib.config.MessageSourceConfig;
 import com.smartapps.smartlib.service.ClientDetailsService;
 import com.smartapps.smartlib.service.ClientDetailsServiceImpl;
 import com.smartapps.smartlib.service.CsvService;
@@ -11,6 +13,7 @@ import com.smartapps.smartlib.service.MessageService;
 import com.smartapps.smartlib.service.MessageServiceImpl;
 
 @Configuration
+@Import({MessageSourceConfig.class})
 public class SharedServicesConfig {
 	
 	@Bean
