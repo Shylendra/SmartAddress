@@ -46,7 +46,7 @@ jobs:
           aws_access_key: ${{ secrets.AWSECR_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWSECR_SECRET_ACCESS_KEY }}
           #aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
-          use_existing_version_if_available: false
+          use_existing_version_if_available: true
           application_name: smartaddress
           environment_name: Smartaddress-env
           version_label: ${{github.SHA}}
