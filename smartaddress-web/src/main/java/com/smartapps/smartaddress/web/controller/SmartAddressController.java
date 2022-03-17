@@ -22,6 +22,7 @@ import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.smartapps.smartaddress.jpa.dto.AddressDto;
 import com.smartapps.smartaddress.web.util.SmartAddressWebUtil;
 import com.smartapps.smartlib.annotations.GlobalApiReponses;
+import com.smartapps.smartlib.annotations.GlobalApiReponsesDelete;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -31,10 +32,10 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @Validated
 @RequestMapping(SmartAddressWebUtil.CONTEXT_ROOT)
-@GlobalApiReponses
 public class SmartAddressController extends CommonController {
 
 	@Operation(summary = SmartAddressWebUtil.REGISTER_ADDRESS_OPERATION)
+	@GlobalApiReponses
 	@PostMapping(SmartAddressWebUtil.REGISTER_ADDRESS)
 	public ResponseEntity<AddressDto> register(
 			@Parameter(name = "registerAddress", description = "JSON with AddressDto object in and out", required = true) @Valid @RequestBody AddressDto address) 
@@ -43,6 +44,7 @@ public class SmartAddressController extends CommonController {
 	}
 
 	@Operation(summary = SmartAddressWebUtil.RETRIEVE_ADDRESSES_OPERATION)
+	@GlobalApiReponses
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_ADDRESSES)
 	public ResponseEntity<List<AddressDto>> retrieveAll(HttpServletRequest request) 
 			throws IOException, GeoIp2Exception {
@@ -50,6 +52,7 @@ public class SmartAddressController extends CommonController {
 	}
 
 	@Operation(summary = SmartAddressWebUtil.RETRIEVE_ADDRESS_OPERATION)
+	@GlobalApiReponses
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_ADDRESS)
 	public ResponseEntity<AddressDto> retrieveById(
 			@PathVariable("id") @Valid Integer id) {
@@ -57,6 +60,7 @@ public class SmartAddressController extends CommonController {
 	}
 
 	@Operation(summary = SmartAddressWebUtil.RETRIEVE_CUSTOMER_ADDRESSES_OPERATION)
+	@GlobalApiReponses
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_CUSTOMER_ADDRESSES)
 	public ResponseEntity<List<AddressDto>> retrieveByCustomerId(
 			@PathVariable("custId") @Valid Integer custId) throws JsonProcessingException {
@@ -64,6 +68,7 @@ public class SmartAddressController extends CommonController {
 	}
 
 	@Operation(summary = SmartAddressWebUtil.UPDATE_ADDRESS_OPERATION)
+	@GlobalApiReponses
 	@PutMapping(SmartAddressWebUtil.UPDATE_ADDRESS)
 	public ResponseEntity<AddressDto> update(
 			@PathVariable("id") @Valid Integer id,
@@ -74,6 +79,7 @@ public class SmartAddressController extends CommonController {
 	}
 
 	@Operation(summary = SmartAddressWebUtil.DELETE_ADDRESS_OPERATION)
+	@GlobalApiReponsesDelete
 	@DeleteMapping(SmartAddressWebUtil.DELETE_ADDRESS)
 	public ResponseEntity<String> deleteById(
 			@PathVariable("id") @Valid Integer id)

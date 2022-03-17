@@ -6,22 +6,22 @@ public class SmartAddressWebUtil {
 	public static final String CONTEXT_ROOT = "/smartaddress-api/";
 
 	public static final String REGISTER_ADDRESS_OPERATION = "Register address";
-	public static final String REGISTER_ADDRESS = "address";
+	public static final String REGISTER_ADDRESS = "addresses";
 	
 	public static final String RETRIEVE_ADDRESSES_OPERATION = "Retrieve addresses";
 	public static final String RETRIEVE_ADDRESSES = "addresses";
 	
 	public static final String RETRIEVE_ADDRESS_OPERATION = "Retrieve address by id";
-	public static final String RETRIEVE_ADDRESS = "{id}/address";
+	public static final String RETRIEVE_ADDRESS = "addresses/{id}";
 	
 	public static final String RETRIEVE_CUSTOMER_ADDRESSES_OPERATION = "Retrieve addresses by customer id";
-	public static final String RETRIEVE_CUSTOMER_ADDRESSES = "{custId}/addresses";
+	public static final String RETRIEVE_CUSTOMER_ADDRESSES = "addresses/customer/{custId}";
 	
 	public static final String UPDATE_ADDRESS_OPERATION = "Update address";
-	public static final String UPDATE_ADDRESS = "{id}/address/update";
+	public static final String UPDATE_ADDRESS = "addresses/{id}";
 	
 	public static final String DELETE_ADDRESS_OPERATION = "Delete address by id";
-	public static final String DELETE_ADDRESS = "{id}/address/delete";
+	public static final String DELETE_ADDRESS = "addresses/{id}";
 
 	/* OpenAPI Settings */
 	public static final String TITLE = CONTEXT_ROOT.replaceAll("/", "");
