@@ -127,17 +127,17 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 						new Object(){}.getClass().getEnclosingMethod().getName(),
 						obj}));
 
-		Address addressToUpdate = SmartLibraryUtil.map(obj, Address.class);
+		Address entityObjToUpdate = SmartLibraryUtil.map(obj, Address.class);
 		if(StringUtils.isNotEmpty(obj.getStartDate())) {
-			addressToUpdate.setStartDate(obj.getSqlStartDate());
+			entityObjToUpdate.setStartDate(obj.getSqlStartDate());
 		}
 		if(StringUtils.isNotEmpty(obj.getEndDate())) {
-			addressToUpdate.setEndDate(obj.getSqlEndDate());
+			entityObjToUpdate.setEndDate(obj.getSqlEndDate());
 		}
 		if(StringUtils.isNotEmpty(obj.getProcTs())) {
-			addressToUpdate.setProcTs(obj.getSqlProcTs());
+			entityObjToUpdate.setProcTs(obj.getSqlProcTs());
 		}
-		AddressDto response = SmartLibraryUtil.map(addressService.update(addressToUpdate).get(), AddressDto.class);
+		AddressDto response = SmartLibraryUtil.map(addressService.update(entityObjToUpdate).get(), AddressDto.class);
 		
 		log.info(messageService.getMessage(
 				SharedMessages.LOG003_RESPONSE, 
