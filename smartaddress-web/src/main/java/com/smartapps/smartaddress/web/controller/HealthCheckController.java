@@ -12,6 +12,7 @@ public class HealthCheckController {
 
 	@GetMapping("/")
 	public ResponseEntity<Void> health(){
+		System.out.println("HealthCheckController::health()::OK");
 		log.info("HealthCheckController::health()::OK");
 		return ResponseEntity.ok().build();
 	}
