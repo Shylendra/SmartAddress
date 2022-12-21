@@ -8,6 +8,7 @@ import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,7 @@ import io.swagger.v3.oas.annotations.Parameter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200/", maxAge = 3600)
 @RestController
 @Validated
 @RequestMapping(SmartAddressWebUtil.CONTEXT_ROOT)
@@ -39,7 +41,7 @@ public class SmartAddressController extends CommonController {
 	@GlobalApiReponsesPost
 	@PostMapping(SmartAddressWebUtil.REGISTER_ADDRESS)
 	public ResponseEntity<AddressDto> register(
-			@Parameter(name = "registerAddress", description = "JSON with AddressDto object in and out", required = true) @Valid @RequestBody AddressDto address) 
+			@Parameter(name = "registerAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address) 
 			throws JsonProcessingException {
 		return ResponseEntity.ok().body(addressServiceFacade.register(address));
 	}
@@ -74,7 +76,7 @@ public class SmartAddressController extends CommonController {
 	@PutMapping(SmartAddressWebUtil.UPDATE_ADDRESS)
 	public ResponseEntity<AddressDto> update(
 			@PathVariable("id") @Valid Integer id,
-			@Parameter(name = "updateAddress", description = "JSON with AddressDto object in and out", required = true) @Valid @RequestBody AddressDto address) 
+			@Parameter(name = "updateAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address) 
 			throws JsonProcessingException {
 			address.setId(id);
 		return ResponseEntity.ok().body(addressServiceFacade.update(address));

@@ -1,0 +1,1468 @@
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-15 16:03:24.293 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-15 16:03:24.300 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 25176 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-15 16:03:24.303 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-15 16:03:27.145 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 16:03:27.252 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2022-12-15 16:03:31.276 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-15 16:03:31.297 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 16:03:31.297 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 16:03:31.297 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-15 16:03:33.693 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 16:03:33.695 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9216 ms
+2022-12-15 16:03:35.910 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-15 16:03:36.027 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-15 16:03:36.225 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 16:03:36.235 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 16:03:36.343 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-15 16:03:38.876 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-15 16:03:39.350 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 16:03:39.510 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-15 16:03:39.876 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 16:03:40.200 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-15 16:03:42.226 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 16:03:42.251 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 16:03:42.810 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-15 16:03:42.810 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-15 16:03:48.526 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-12-15 16:03:48.843 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 16:03:48.926 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 16:03:48.943 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 25.787 seconds (JVM running for 29.68)
+2022-12-15 16:04:12.782 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 16:04:12.783 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 16:04:12.785 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-15 16:04:12.937 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 16:04:12.939 [http-nio-8080-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 16:04:13.233 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 16:04:13.525 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 2,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:06:42.981 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:06:42.984 [http-nio-8080-exec-4] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:06:42.997 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:06:43.109 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 2,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-15 17:13:01.066 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-15 17:13:01.068 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 16392 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-15 17:13:01.072 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-15 17:13:03.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 17:13:03.627 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2022-12-15 17:13:03.627 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'localeResolver' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=localeResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]] for bean 'localeResolver': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=messageSourceConfig; factoryMethodName=localeResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/smartapps/smartlib/config/MessageSourceConfig.class]] bound.
+2022-12-15 17:13:03.816 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'localeResolver', defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/smartapps/smartlib/config/MessageSourceConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-15 17:20:34.379 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-15 17:20:34.379 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 39772 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-15 17:20:34.391 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-15 17:20:36.143 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'localeResolver' defined in class path resource [com/smartapps/smartlib/config/MessageSourceConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=messageSourceConfig; factoryMethodName=localeResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/smartapps/smartlib/config/MessageSourceConfig.class]] for bean 'localeResolver': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=localeResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]] bound.
+2022-12-15 17:20:36.193 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'localeResolver', defined in class path resource [com/smartapps/smartlib/config/MessageSourceConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-15 17:21:58.260 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 14980 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-15 17:21:58.261 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-15 17:21:58.261 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-15 17:21:59.861 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 17:21:59.927 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2022-12-15 17:22:02.946 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-15 17:22:02.961 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 17:22:02.961 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 17:22:02.961 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-15 17:22:04.193 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 17:22:04.197 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5850 ms
+2022-12-15 17:22:06.178 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-15 17:22:06.282 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-15 17:22:06.410 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 17:22:06.410 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 17:22:06.510 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-15 17:22:08.151 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-15 17:22:08.529 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 17:22:08.643 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-15 17:22:09.000 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 17:22:09.227 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-15 17:22:11.638 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 17:22:11.651 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 17:22:11.671 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-15 17:22:11.671 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-15 17:22:16.796 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-12-15 17:22:17.122 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 17:22:17.424 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 17:22:17.449 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 19.971 seconds (JVM running for 22.473)
+2022-12-15 17:22:31.826 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 17:22:31.826 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 17:22:31.828 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-15 17:22:32.050 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:22:32.051 [http-nio-8080-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:22:32.377 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:22:32.827 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 2,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:22:43.175 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::deleteById() ***]:
+2022-12-15 17:22:43.176 [http-nio-8080-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::deleteById() ***]:
+2022-12-15 17:22:43.177 [http-nio-8080-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readById() ***]:
+2022-12-15 17:22:43.187 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select address0_.id as id1_0_0_, address0_.proc_app_id as proc_app2_0_0_, address0_.proc_ts as proc_ts3_0_0_, address0_.proc_user_id as proc_use4_0_0_, address0_.proc_user_ip_address as proc_use5_0_0_, address0_.proc_user_latitude as proc_use6_0_0_, address0_.proc_user_longitude as proc_use7_0_0_, address0_.vers_id as vers_id8_0_0_, address0_.address_line1 as address_9_0_0_, address0_.address_line2 as address10_0_0_, address0_.app_id as app_id11_0_0_, address0_.city as city12_0_0_, address0_.country as country13_0_0_, address0_.customer_id as custome14_0_0_, address0_.end_date as end_dat15_0_0_, address0_.latitude as latitud16_0_0_, address0_.longitude as longitu17_0_0_, address0_.postal_code as postal_18_0_0_, address0_.start_date as start_d19_0_0_, address0_.state as state20_0_0_ from smart_address address0_ where address0_.id=?
+2022-12-15 17:22:43.191 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+2022-12-15 17:22:43.437 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - delete from smart_address where id=? and vers_id=?
+2022-12-15 17:22:43.437 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+2022-12-15 17:22:43.438 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [0]
+2022-12-15 17:22:43.802 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:22:43.802 [http-nio-8080-exec-4] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:22:43.803 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:22:43.843 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-15 17:30:19.560 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-15 17:30:19.560 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 45916 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-15 17:30:19.560 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-15 17:30:20.833 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 17:30:20.893 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2022-12-15 17:30:23.668 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-15 17:30:23.676 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 17:30:23.676 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 17:30:23.676 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-15 17:30:24.917 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 17:30:24.917 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5280 ms
+2022-12-15 17:30:26.293 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-15 17:30:26.351 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-15 17:30:26.420 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 17:30:26.427 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 17:30:26.500 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-15 17:30:27.729 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-15 17:30:28.055 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 17:30:28.134 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-15 17:30:28.322 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 17:30:28.469 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-15 17:30:29.302 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 17:30:29.311 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 17:30:29.326 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-15 17:30:29.326 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-15 17:30:33.826 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-12-15 17:30:34.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 17:30:34.143 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 17:30:34.168 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 15.139 seconds (JVM running for 16.88)
+2022-12-15 17:30:45.974 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 17:30:45.974 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 17:30:45.976 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-15 17:30:46.096 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:30:46.097 [http-nio-8080-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:30:46.288 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:30:46.488 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:30:53.077 [http-nio-8080-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:30:53.078 [http-nio-8080-exec-2] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:30:53.079 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:30:53.134 [http-nio-8080-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:30:58.206 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:30:58.207 [http-nio-8080-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:30:58.208 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:30:58.247 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:31:02.631 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:31:02.632 [http-nio-8080-exec-4] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:31:02.633 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:31:02.666 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:31:07.241 [http-nio-8080-exec-5] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:31:07.241 [http-nio-8080-exec-5] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:31:07.242 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:31:07.260 [http-nio-8080-exec-5] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 17:31:11.364 [http-nio-8080-exec-6] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 17:31:11.364 [http-nio-8080-exec-6] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 17:31:11.365 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 17:31:11.406 [http-nio-8080-exec-6] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-15 20:02:53.045 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-15 20:02:53.045 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 14456 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-15 20:02:53.049 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-15 20:02:54.358 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 20:02:54.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2022-12-15 20:02:56.729 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-15 20:02:56.744 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:02:56.745 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-15 20:02:56.745 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-15 20:02:57.706 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-15 20:02:57.706 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4584 ms
+2022-12-15 20:02:59.210 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-15 20:02:59.275 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-15 20:02:59.348 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 20:02:59.354 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-15 20:02:59.423 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-15 20:03:00.526 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-15 20:03:00.863 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 20:03:00.986 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-15 20:03:01.212 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 20:03:01.346 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-15 20:03:02.261 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 20:03:02.273 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 20:03:02.296 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-15 20:03:02.297 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-15 20:03:06.017 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-12-15 20:03:06.258 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-15 20:03:06.284 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 20:03:06.300 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 13.853 seconds (JVM running for 15.985)
+2022-12-15 20:07:04.423 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 20:07:04.424 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-15 20:07:04.427 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-12-15 20:07:04.590 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 20:07:04.592 [http-nio-8080-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 20:07:04.893 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 20:07:05.142 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 20:56:24.146 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 20:56:24.160 [http-nio-8080-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 20:56:24.160 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 20:56:24.288 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 20:57:01.106 [http-nio-8080-exec-5] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 20:57:01.106 [http-nio-8080-exec-5] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 20:57:01.106 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 20:57:01.158 [http-nio-8080-exec-5] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 20:57:01.381 [http-nio-8080-exec-6] INFO  c.s.s.web.config.ControllerExceptionHandler - ControllerExceptionHandler::handleMethodArgumentNotValid()
+2022-12-15 20:57:20.389 [http-nio-8080-exec-7] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 20:57:20.390 [http-nio-8080-exec-7] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 20:57:20.391 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 20:57:20.449 [http-nio-8080-exec-7] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 20:58:17.245 [http-nio-8080-exec-8] INFO  c.s.s.web.config.ControllerExceptionHandler - ControllerExceptionHandler::handleMethodArgumentNotValid()
+2022-12-15 20:58:17.256 [http-nio-8080-exec-9] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 20:58:17.256 [http-nio-8080-exec-9] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 20:58:17.256 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 20:58:17.288 [http-nio-8080-exec-9] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 21:00:09.635 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 21:00:09.635 [http-nio-8080-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 21:00:09.636 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 21:00:09.722 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 21:00:20.561 [http-nio-8080-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 21:00:20.562 [http-nio-8080-exec-2] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 21:00:20.562 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 21:00:20.609 [http-nio-8080-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 21:00:34.942 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 21:00:34.943 [http-nio-8080-exec-4] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 21:00:34.944 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 21:00:34.950 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() REQUEST ***]: 
+ {
+  "id" : 0,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}
+2022-12-15 21:00:34.969 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-15 21:00:34.993 [http-nio-8080-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::create() ***]:
+2022-12-15 21:00:35.027 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - insert into smart_address (proc_app_id, proc_ts, proc_user_id, proc_user_ip_address, proc_user_latitude, proc_user_longitude, vers_id, address_line1, address_line2, app_id, city, country, customer_id, end_date, latitude, longitude, postal_code, start_date, state) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-15 21:00:35.027 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - []
+2022-12-15 21:00:35.027 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2022-12-15 21:00:34.965]
+2022-12-15 21:00:35.047 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - []
+2022-12-15 21:00:35.047 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - []
+2022-12-15 21:00:35.048 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - []
+2022-12-15 21:00:35.048 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - []
+2022-12-15 21:00:35.049 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [0]
+2022-12-15 21:00:35.049 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [sdf]
+2022-12-15 21:00:35.050 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [sdf]
+2022-12-15 21:00:35.050 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [10] as [VARCHAR] - [SMART_TENANT]
+2022-12-15 21:00:35.050 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [11] as [VARCHAR] - [sdf]
+2022-12-15 21:00:35.050 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [12] as [VARCHAR] - [sdf]
+2022-12-15 21:00:35.051 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [13] as [INTEGER] - [1]
+2022-12-15 21:00:35.052 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [14] as [DATE] - [2022-02-26]
+2022-12-15 21:00:35.053 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [15] as [VARCHAR] - [latitude3]
+2022-12-15 21:00:35.053 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [16] as [VARCHAR] - [latitude3]
+2022-12-15 21:00:35.053 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [17] as [VARCHAR] - [sdf]
+2022-12-15 21:00:35.053 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [18] as [DATE] - [2022-02-26]
+2022-12-15 21:00:35.054 [http-nio-8080-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [19] as [VARCHAR] - [sdf]
+2022-12-15 21:00:35.421 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() RESPONSE ***]: 
+ {
+  "id" : 6,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}
+2022-12-15 21:01:03.081 [http-nio-8080-exec-5] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-15 21:01:03.081 [http-nio-8080-exec-5] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-15 21:01:03.082 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-15 21:01:03.111 [http-nio-8080-exec-5] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 6,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-16 05:55:42.128 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 47764 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-16 05:55:42.134 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-16 05:55:42.506 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-16 05:55:50.474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-16 05:55:50.646 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces.
+2022-12-16 05:56:10.166 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-16 05:56:10.647 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-16 05:56:10.649 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-16 05:56:10.650 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-16 05:56:16.711 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-16 05:56:16.715 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 34064 ms
+2022-12-16 05:56:26.526 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-16 05:56:26.855 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-16 05:56:28.281 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-16 05:56:28.293 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-16 05:56:29.701 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-16 05:56:38.540 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-16 05:56:40.592 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-16 05:56:41.516 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-16 05:56:43.413 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-16 05:56:44.982 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-16 05:56:52.327 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-16 05:56:52.389 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-16 05:56:52.705 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-16 05:56:52.706 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-16 05:57:04.458 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-12-16 05:57:06.642 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-16 05:57:07.346 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-16 05:57:07.408 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 90.874 seconds (JVM running for 102.0)
+2022-12-16 06:31:24.102 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-16 06:31:24.103 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-16 06:31:24.108 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-12-16 06:31:24.464 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-16 06:31:24.464 [http-nio-8080-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-16 06:31:25.124 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-16 06:31:25.198 [http-nio-8080-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-16 06:31:25.200 [http-nio-8080-exec-2] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-16 06:31:25.201 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-16 06:31:25.750 [http-nio-8080-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 6,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-16 06:31:25.750 [http-nio-8080-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 6,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-16 06:31:31.389 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-16 06:31:31.389 [http-nio-8080-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-16 06:31:31.390 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-16 06:31:31.475 [http-nio-8080-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 6,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]
+2022-12-16 06:31:33.739 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-16 06:31:33.739 [http-nio-8080-exec-4] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-16 06:31:33.741 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.app_id as app_id11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.latitude as latitud16_0_, address0_.longitude as longitu17_0_, address0_.postal_code as postal_18_0_, address0_.start_date as start_d19_0_, address0_.state as state20_0_ from smart_address address0_
+2022-12-16 06:31:33.819 [http-nio-8080-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 1,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 6,
+  "customerId" : 1,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "sdf",
+  "addressLine2" : "sdf",
+  "city" : "sdf",
+  "state" : "sdf",
+  "country" : "sdf",
+  "postalCode" : "sdf",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude3",
+  "longitude" : "latitude3"
+}, {
+  "id" : 3,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT",
+  "addressLine1" : "fn2",
+  "addressLine2" : "fn2",
+  "city" : "fn2",
+  "state" : "fn2",
+  "country" : "fn2",
+  "postalCode" : "fn2",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+}, {
+  "id" : 4,
+  "customerId" : 10,
+  "appId" : "SMART_TENANT001",
+  "addressLine1" : "fn2-UPD",
+  "addressLine2" : "fn2-UPD",
+  "city" : "fn2-UPD",
+  "state" : "fn2-UPD",
+  "country" : "fn2-UPD",
+  "postalCode" : "fn2-UPD",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26",
+  "latitude" : "latitude2",
+  "longitude" : "longitude2"
+} ]

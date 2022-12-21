@@ -37,8 +37,25 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 		if(StringUtils.isNotEmpty(obj.getEndDate())) {
 			entityObj.setEndDate(obj.getSqlEndDate());
 		}
+		
+		/* Base Entity */
 		if(StringUtils.isNotEmpty(obj.getProcTs())) {
 			entityObj.setProcTs(obj.getSqlProcTs());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
+			entityObj.setProcApprId(obj.getProcApprId());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
+			entityObj.setProcUserId(obj.getProcUserId());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserIpAddress())) {
+			entityObj.setProcUserIpAddress(obj.getProcUserIpAddress());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserLatitude())) {
+			entityObj.setProcUserLatitude(obj.getProcUserLatitude());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserLongitude())) {
+			entityObj.setProcUserLongitude(obj.getProcUserLongitude());
 		}
 		AddressDto response = SmartLibraryUtil.map(addressService.create(entityObj).get(), AddressDto.class);
 		
@@ -127,17 +144,34 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 						new Object(){}.getClass().getEnclosingMethod().getName(),
 						obj}));
 
-		Address entityObjToUpdate = SmartLibraryUtil.map(obj, Address.class);
+		Address entityObj = SmartLibraryUtil.map(obj, Address.class);
 		if(StringUtils.isNotEmpty(obj.getStartDate())) {
-			entityObjToUpdate.setStartDate(obj.getSqlStartDate());
+			entityObj.setStartDate(obj.getSqlStartDate());
 		}
 		if(StringUtils.isNotEmpty(obj.getEndDate())) {
-			entityObjToUpdate.setEndDate(obj.getSqlEndDate());
+			entityObj.setEndDate(obj.getSqlEndDate());
 		}
+		
+		/* Base Entity */
 		if(StringUtils.isNotEmpty(obj.getProcTs())) {
-			entityObjToUpdate.setProcTs(obj.getSqlProcTs());
+			entityObj.setProcTs(obj.getSqlProcTs());
 		}
-		AddressDto response = SmartLibraryUtil.map(addressService.update(entityObjToUpdate).get(), AddressDto.class);
+		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
+			entityObj.setProcApprId(obj.getProcApprId());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
+			entityObj.setProcUserId(obj.getProcUserId());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserIpAddress())) {
+			entityObj.setProcUserIpAddress(obj.getProcUserIpAddress());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserLatitude())) {
+			entityObj.setProcUserLatitude(obj.getProcUserLatitude());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserLongitude())) {
+			entityObj.setProcUserLongitude(obj.getProcUserLongitude());
+		}
+		AddressDto response = SmartLibraryUtil.map(addressService.update(entityObj).get(), AddressDto.class);
 		
 		log.info(messageService.getMessage(
 				SharedMessages.LOG003_RESPONSE, 
