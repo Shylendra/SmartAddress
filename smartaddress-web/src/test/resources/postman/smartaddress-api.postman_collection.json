@@ -604,7 +604,7 @@
 					]
 				},
 				{
-					"name": "/",
+					"name": "/actuator/gateway/routes",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -614,11 +614,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/",
+							"raw": "{{baseUrl}}/actuator/gateway/routes/",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
+								"actuator",
+								"gateway",
+								"routes",
 								""
 							]
 						}
