@@ -237,6 +237,27 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"key": "APP_ID",
+										"value": "SMART_APP1",
+										"type": "text"
+									},
+									{
+										"key": "USER_ID",
+										"value": "testUser",
+										"type": "text"
+									},
+									{
+										"key": "USER_GROUPS",
+										"value": "ADMIN",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"body": {
@@ -504,6 +525,27 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"key": "APP_ID",
+										"value": "SMART_APP1",
+										"type": "text"
+									},
+									{
+										"key": "USER_ID",
+										"value": "testUser",
+										"type": "text"
+									},
+									{
+										"key": "USER_GROUPS",
+										"value": "ADMIN",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "",
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"url": {
@@ -946,6 +988,27 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "APP_ID",
+								"value": "SMART_APP1",
+								"type": "text"
+							},
+							{
+								"key": "USER_ID",
+								"value": "testUser",
+								"type": "text"
+							},
+							{
+								"key": "USER_GROUPS",
+								"value": "ADMIN",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {

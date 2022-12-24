@@ -2,15 +2,14 @@ package com.smartapps.smartaddress.jpa.dto;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import org.apache.commons.lang.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.smartapps.smartlib.dto.CommonDto;
 import com.smartapps.smartlib.util.SmartDateUtil;
 import com.smartapps.smartlib.util.SmartLibraryUtil;
-import com.smartapps.smartlib.validators.annotations.ValidAppId;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
@@ -23,16 +22,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Schema(name = "Address")
-public class AddressDto extends CommonDto implements Serializable {
+public class AddressDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	private int id;
 	private int customerId;
-	
-	@ValidAppId
-	private String appId;
-	
+	private String addressType;
 	private String addressLine1;
 	private String addressLine2;
 	private String city;
@@ -41,10 +37,28 @@ public class AddressDto extends CommonDto implements Serializable {
 	private String postalCode;
 	private String startDate;
 	private String endDate;
-	private String latitude;
-	private String longitude;
-
 	
+	@JsonIgnore
+	private String procTs;
+	
+	@JsonIgnore
+	private String procApprId;
+	
+	@JsonIgnore
+	private String procUserId;
+	
+	@JsonIgnore
+	private String procUserIpAddress;
+	
+	@JsonIgnore
+	private String procUserLatitude;
+
+	@JsonIgnore
+	private String procUserLongitude;
+	
+	@JsonIgnore
+	private long version;
+
 	@JsonIgnore
 	public Date getSqlStartDate() {
 		if(StringUtils.isNotEmpty(startDate)) {
@@ -59,6 +73,14 @@ public class AddressDto extends CommonDto implements Serializable {
 			return SmartDateUtil.parseDate(endDate);
 		}
 		return SmartDateUtil.getCurrentSystemDate();
+	}
+	
+	@JsonIgnore
+	public Timestamp getSqlProcTs() {
+		if(StringUtils.isNotEmpty(procTs)) {
+			return SmartDateUtil.parseTimestamp(procTs);
+		}
+		return SmartDateUtil.getCurrentSystemTimestamp();
 	}
 
 	@Override

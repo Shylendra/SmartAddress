@@ -40,9 +40,9 @@ public class Address extends CommonEntity implements Serializable {
 	@Column(name = "CUSTOMER_ID")
 	private int customerId;
 	
-	@Column(name = "APP_ID")
+	@Column(name = "ADDRESS_TYPE")
 	@Convert(converter = TrimConverter.class)
-	private String appId;
+	private String addressType;
 	
 	@Column(name = "ADDRESS_LINE1")
 	@Convert(converter = TrimConverter.class)
@@ -67,14 +67,6 @@ public class Address extends CommonEntity implements Serializable {
 	@Column(name = "POSTAL_CODE")
 	@Convert(converter = TrimConverter.class)
 	private String postalCode;
-
-	@Column(name = "LATITUDE")
-	@Convert(converter = TrimConverter.class)
-	private String latitude;
-	
-	@Column(name = "LONGITUDE")
-	@Convert(converter = TrimConverter.class)
-	private String longitude;
 
 	@Column(name = "START_DATE")
 	private Date startDate = SmartDateUtil.getCurrentSystemDate();

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.smartapps.smartaddress.jpa.entities.Address;
 import com.smartapps.smartaddress.jpa.repository.AddressRepository;
-import com.smartapps.smartlib.exception.ResourceNotFoundException;
 import com.smartapps.smartlib.service.MessageService;
 import com.smartapps.smartlib.util.SharedMessages;
 
@@ -25,8 +24,6 @@ public class AddressServiceImpl implements AddressService {
 	@Autowired
 	private MessageService messageService;
 	
-	private static final String ENTITY_NAME = "Address";
-
 	@Override
 	public Optional<Address> create(Address obj) {
 		log.info(messageService.getMessage(
@@ -55,12 +52,11 @@ public class AddressServiceImpl implements AddressService {
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
 		Optional<Address> entityObj = repository.findById(id);
-		if(!entityObj.isPresent()) {
-			throw new ResourceNotFoundException(messageService.getMessage(SharedMessages.ERR001_RESOURCE_NOTFOUND, 
-					new Object[]{ENTITY_NAME,id}));
+		if(entityObj.isPresent()) {
+			return entityObj.get();
 		}
 		
-		return entityObj.get();
+		return null;
 	}
 
 	@Override
@@ -80,39 +76,7 @@ public class AddressServiceImpl implements AddressService {
 				new Object[]{
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
-		
-		Address entityObj = readById(obj.getId());
-		entityObj.setCustomerId(obj.getCustomerId());
-		
-		if(StringUtils.isNotEmpty(obj.getAppId())) {
-			entityObj.setAppId(obj.getAppId());
-		}
-		if(StringUtils.isNotEmpty(obj.getAddressLine1())) {
-			entityObj.setAddressLine1(obj.getAddressLine1());
-		}
-		if(StringUtils.isNotEmpty(obj.getAddressLine2())) {
-			entityObj.setAddressLine2(obj.getAddressLine2());
-		}
-		if(StringUtils.isNotEmpty(obj.getCity())) {
-			entityObj.setCity(obj.getCity());
-		}
-		if(StringUtils.isNotEmpty(obj.getState())) {
-			entityObj.setState(obj.getState());
-		}
-		if(StringUtils.isNotEmpty(obj.getCountry())) {
-			entityObj.setCountry(obj.getCountry());
-		}
-		if(StringUtils.isNotEmpty(obj.getPostalCode())) {
-			entityObj.setPostalCode(obj.getPostalCode());
-		}
-		if(StringUtils.isNotEmpty(obj.getLatitude())) {
-			entityObj.setLatitude(obj.getLatitude());
-		}
-		if(StringUtils.isNotEmpty(obj.getLongitude())) {
-			entityObj.setLongitude(obj.getLongitude());
-		}
-		
-		return Optional.of(repository.save(entityObj));
+		return Optional.of(repository.save(obj));
 	}
 
 	@Override

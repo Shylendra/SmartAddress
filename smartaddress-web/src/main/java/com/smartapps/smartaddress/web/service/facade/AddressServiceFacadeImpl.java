@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
-import org.codehaus.plexus.util.StringUtils;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -30,43 +29,20 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 						new Object(){}.getClass().getEnclosingMethod().getName(),
 						obj}));
 
-		Address entityObj = SmartLibraryUtil.map(obj, Address.class);
-		if(StringUtils.isNotEmpty(obj.getStartDate())) {
-			entityObj.setStartDate(obj.getSqlStartDate());
-		}
-		if(StringUtils.isNotEmpty(obj.getEndDate())) {
-			entityObj.setEndDate(obj.getSqlEndDate());
+		Address reqEntityObj = assembler.mapToEntity(obj);
+		Address resEntityObj = addressService.create(reqEntityObj).get();
+		if(resEntityObj != null) {
+			AddressDto resObj = assembler.mapToDto(resEntityObj);
+			log.info(messageService.getMessage(
+					SharedMessages.LOG003_RESPONSE, 
+					new Object[]{
+							this.getClass().getSimpleName(), 
+							new Object(){}.getClass().getEnclosingMethod().getName(),
+							resObj}));
+			return resObj;
 		}
 		
-		/* Base Entity */
-		if(StringUtils.isNotEmpty(obj.getProcTs())) {
-			entityObj.setProcTs(obj.getSqlProcTs());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
-			entityObj.setProcApprId(obj.getProcApprId());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
-			entityObj.setProcUserId(obj.getProcUserId());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserIpAddress())) {
-			entityObj.setProcUserIpAddress(obj.getProcUserIpAddress());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserLatitude())) {
-			entityObj.setProcUserLatitude(obj.getProcUserLatitude());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserLongitude())) {
-			entityObj.setProcUserLongitude(obj.getProcUserLongitude());
-		}
-		AddressDto response = SmartLibraryUtil.map(addressService.create(entityObj).get(), AddressDto.class);
-		
-		log.info(messageService.getMessage(
-				SharedMessages.LOG003_RESPONSE, 
-				new Object[]{
-						this.getClass().getSimpleName(), 
-						new Object(){}.getClass().getEnclosingMethod().getName(),
-						response}));
-
-		return response;
+		return null;
 	}
 
 	@Override
@@ -80,7 +56,7 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 		List<AddressDto> objList = new ArrayList<>();
 		List<Address> entityObjList = addressService.readAll();
 		for(Address entityObj: entityObjList) {
-			objList.add(SmartLibraryUtil.map(entityObj, AddressDto.class));
+			objList.add(assembler.mapToDto(entityObj));
 		}
 
 		log.info(messageService.getMessage(
@@ -101,15 +77,19 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
 
-		AddressDto response = SmartLibraryUtil.map(addressService.readById(id), AddressDto.class);
+		Address entityObj = addressService.readById(id);
+		if(entityObj != null) {
+			AddressDto resObj = assembler.mapToDto(entityObj);
 
-		log.info(messageService.getMessage(
-				SharedMessages.LOG003_RESPONSE, 
-				new Object[]{
-						this.getClass().getSimpleName(), 
-						new Object(){}.getClass().getEnclosingMethod().getName(),
-						response}));
-		return response;
+			log.info(messageService.getMessage(
+					SharedMessages.LOG003_RESPONSE, 
+					new Object[]{
+							this.getClass().getSimpleName(), 
+							new Object(){}.getClass().getEnclosingMethod().getName(),
+							resObj}));
+			return resObj;
+		}
+		return null;
 	}
 
 	@Override
@@ -123,7 +103,7 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 		List<AddressDto> objList = new ArrayList<>();
 		List<Address> entityObjList = addressService.readByCustomerId(custId);
 		for(Address entityObj: entityObjList) {
-			objList.add(SmartLibraryUtil.map(entityObj, AddressDto.class));
+			objList.add(assembler.mapToDto(entityObj));
 		}
 		
 		log.info(messageService.getMessage(
@@ -144,42 +124,18 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 						new Object(){}.getClass().getEnclosingMethod().getName(),
 						obj}));
 
-		Address entityObj = SmartLibraryUtil.map(obj, Address.class);
-		if(StringUtils.isNotEmpty(obj.getStartDate())) {
-			entityObj.setStartDate(obj.getSqlStartDate());
+		Address entityObj = addressService.readById(obj.getId());
+		if(entityObj != null) {
+			AddressDto resObj = assembler.mapToDto(addressService.update(entityObj).get());
+			log.info(messageService.getMessage(
+					SharedMessages.LOG003_RESPONSE, 
+					new Object[]{
+							this.getClass().getSimpleName(), 
+							new Object(){}.getClass().getEnclosingMethod().getName(),
+							resObj}));
+			return resObj;
 		}
-		if(StringUtils.isNotEmpty(obj.getEndDate())) {
-			entityObj.setEndDate(obj.getSqlEndDate());
-		}
-		
-		/* Base Entity */
-		if(StringUtils.isNotEmpty(obj.getProcTs())) {
-			entityObj.setProcTs(obj.getSqlProcTs());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
-			entityObj.setProcApprId(obj.getProcApprId());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
-			entityObj.setProcUserId(obj.getProcUserId());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserIpAddress())) {
-			entityObj.setProcUserIpAddress(obj.getProcUserIpAddress());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserLatitude())) {
-			entityObj.setProcUserLatitude(obj.getProcUserLatitude());
-		}
-		if(StringUtils.isNotEmpty(obj.getProcUserLongitude())) {
-			entityObj.setProcUserLongitude(obj.getProcUserLongitude());
-		}
-		AddressDto response = SmartLibraryUtil.map(addressService.update(entityObj).get(), AddressDto.class);
-		
-		log.info(messageService.getMessage(
-				SharedMessages.LOG003_RESPONSE, 
-				new Object[]{
-						this.getClass().getSimpleName(), 
-						new Object(){}.getClass().getEnclosingMethod().getName(),
-						response}));
-		return response;
+		return null;
 	}
 
 	@Override
