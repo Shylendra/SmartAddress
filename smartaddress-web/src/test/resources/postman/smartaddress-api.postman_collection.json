@@ -36,8 +36,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "11",
-											"description": "(Required) "
+											"value": "1"
 										}
 									]
 								}
@@ -262,7 +261,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"customerId\": 10,\n    \"appId\": \"SMART_TENANT001\",\n    \"addressLine1\": \"fn2-UPD\",\n    \"addressLine2\": \"fn2-UPD\",\n    \"city\": \"fn2-UPD\",\n    \"state\": \"fn2-UPD\",\n    \"country\": \"fn2-UPD\",\n    \"postalCode\": \"fn2-UPD\"\n}",
+									"raw": "{\n    \"customerId\": 10,\n    \"addressType\": \"PERM-UPD\",\n    \"addressLine1\": \"fn2-UPD\",\n    \"addressLine2\": \"fn2-UPD\",\n    \"city\": \"fn2-UPD\",\n    \"state\": \"fn2-UPD\",\n    \"country\": \"fn2-UPD\",\n    \"postalCode\": \"fn2-UPD\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -283,8 +282,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "11",
-											"description": "(Required) "
+											"value": "1"
 										}
 									]
 								}
@@ -562,8 +560,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "-96848153",
-											"description": "(Required) "
+											"value": "1"
 										}
 									]
 								}
@@ -1013,7 +1010,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"customerId\": 10,\n    \"appId\": \"SMART_TENANT\",\n    \"addressLine1\": \"fn3\",\n    \"addressLine2\": \"fn3\",\n    \"city\": \"fn3\",\n    \"state\": \"fn3\",\n    \"country\": \"fn3\",\n    \"postalCode\": \"fn3\",\n    \"startDate\": \"2022-02-26\",\n    \"endDate\": \"2022-02-26\",\n    \"latitude\": \"latitude3\",\n    \"longitude\": \"longitude3\",\n    \"procTs\": \"2020-05-01 12:30:00\"\n}",
+							"raw": "{\n    \"customerId\": 10,\n    \"addressType\": \"PERMANENT\",\n    \"addressLine1\": \"fn3\",\n    \"addressLine2\": \"fn3\",\n    \"city\": \"fn3\",\n    \"state\": \"fn3\",\n    \"country\": \"fn3\",\n    \"postalCode\": \"fn3\",\n    \"startDate\": \"2022-02-26\",\n    \"endDate\": \"2022-02-26\",\n    \"latitude\": \"latitude3\",\n    \"longitude\": \"longitude3\",\n    \"procTs\": \"2020-05-01 12:30:00\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
