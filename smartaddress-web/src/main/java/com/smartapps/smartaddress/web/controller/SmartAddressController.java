@@ -3,6 +3,7 @@ package com.smartapps.smartaddress.web.controller;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.jboss.logging.MDC;
@@ -46,7 +47,8 @@ public class SmartAddressController extends CommonController {
 			@RequestHeader(value = SmartHttpUtil.APP_ID_HEADER, required = true) @ValidAppId String appId,
 			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
 			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = true) String userGroups,
-			@Parameter(name = "registerAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address) 
+			@Parameter(name = "registerAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address,
+			HttpServletRequest request) 
 			throws JsonProcessingException {
 		
 		/** Logging **/
@@ -56,6 +58,7 @@ public class SmartAddressController extends CommonController {
 
 		address.setProcApprId(appId);
 		address.setProcUserId(userId);
+		address.setProcUserIpAddress(SmartHttpUtil.getIpAddress(request));
 		return ResponseEntity.ok().body(addressServiceFacade.register(address));
 	}
 
@@ -91,7 +94,8 @@ public class SmartAddressController extends CommonController {
 			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
 			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = true) String userGroups,
 			@PathVariable("id") @Valid Integer id,
-			@Parameter(name = "updateAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address) 
+			@Parameter(name = "updateAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address,
+			HttpServletRequest request) 
 			throws JsonProcessingException {
 		
 		/** Logging **/
@@ -102,6 +106,7 @@ public class SmartAddressController extends CommonController {
 		address.setId(id);
 		address.setProcApprId(appId);
 		address.setProcUserId(userId);
+		address.setProcUserIpAddress(SmartHttpUtil.getIpAddress(request));
 		return ResponseEntity.ok().body(addressServiceFacade.update(address));
 	}
 

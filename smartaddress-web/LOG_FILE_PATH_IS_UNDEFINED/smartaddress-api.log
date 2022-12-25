@@ -1,0 +1,245 @@
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-26 00:02:10.239 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 00:07:10.248 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 00:12:10.254 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 00:17:10.259 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 00:22:10.268 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 00:27:10.281 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 00:32:10.288 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-26 06:42:54.000 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 27540 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-26 06:42:54.001 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-26 06:42:54.039 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-26 06:42:58.316 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 06:42:58.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 518 ms. Found 1 JPA repository interfaces.
+2022-12-26 06:43:01.003 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6816cda6-bf96-3e65-aeaa-e07992819b43
+2022-12-26 06:43:03.933 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-12-26 06:43:03.959 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-26 06:43:03.960 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-26 06:43:03.961 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-26 06:43:05.718 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-26 06:43:05.720 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11548 ms
+2022-12-26 06:43:08.653 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-26 06:43:08.755 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-26 06:43:08.875 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-26 06:43:08.891 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-26 06:43:09.089 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-26 06:43:11.209 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-26 06:43:11.874 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 06:43:12.079 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-26 06:43:12.572 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-26 06:43:12.873 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-26 06:43:14.664 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 06:43:14.684 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 06:43:14.752 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-26 06:43:14.753 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-26 06:43:25.136 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-12-26 06:43:26.888 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2022-12-26 06:43:27.093 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-12-26 06:43:27.198 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-12-26 06:43:27.401 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-12-26 06:43:27.417 [main] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 06:43:27.580 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-12-26 06:43:27.580 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-12-26 06:43:27.580 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-12-26 06:43:27.580 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2022-12-26 06:43:27.581 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-12-26 06:43:27.581 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-12-26 06:43:27.581 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-12-26 06:43:28.449 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2022-12-26 06:43:28.461 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-12-26 06:43:28.465 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-12-26 06:43:28.481 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1671997408477 with initial instances count: 1
+2022-12-26 06:43:28.487 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SMARTADDRESS with eureka with status UP
+2022-12-26 06:43:28.488 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1671997408488, current=UP, previous=STARTING]
+2022-12-26 06:43:28.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-12-26 06:43:28.501 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SMARTADDRESS/SmartAddress:14887caa11e70be8e2c0430f63cb95fd: registering service...
+2022-12-26 06:43:28.578 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-26 06:43:28.579 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2022-12-26 06:43:28.647 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SMARTADDRESS/SmartAddress:14887caa11e70be8e2c0430f63cb95fd - registration status: 204
+2022-12-26 06:43:29.322 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 38.117 seconds (JVM running for 42.364)
+2022-12-26 06:48:27.588 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 06:53:27.600 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 06:58:27.604 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:03:27.611 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:08:27.618 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:13:27.636 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:18:27.643 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:21:35.858 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 07:21:35.858 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-26 07:21:35.874 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2022-12-26 07:21:36.552 [http-nio-8082-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-26 07:21:36.555 [http-nio-8082-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-26 07:21:36.990 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.address_type as address11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.postal_code as postal_16_0_, address0_.start_date as start_d17_0_, address0_.state as state18_0_ from smart_address address0_
+2022-12-26 07:21:37.092 [http-nio-8082-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ ]
+2022-12-26 07:23:25.695 [http-nio-8082-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() REQUEST ***]: 
+ {
+  "id" : 0,
+  "customerId" : 1,
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}
+2022-12-26 07:23:25.802 [http-nio-8082-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::create() ***]:
+2022-12-26 07:23:25.905 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into smart_address (proc_app_id, proc_ts, proc_user_id, proc_user_ip_address, proc_user_latitude, proc_user_longitude, vers_id, address_line1, address_line2, address_type, city, country, customer_id, end_date, postal_code, start_date, state) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 07:23:25.916 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [SMART_APP1]
+2022-12-26 07:23:25.918 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2022-12-26 07:23:25.696]
+2022-12-26 07:23:25.926 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [testUser]
+2022-12-26 07:23:25.927 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - []
+2022-12-26 07:23:25.927 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - []
+2022-12-26 07:23:25.927 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - []
+2022-12-26 07:23:25.929 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [0]
+2022-12-26 07:23:25.929 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [fn3]
+2022-12-26 07:23:25.929 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [fn3]
+2022-12-26 07:23:25.930 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [10] as [VARCHAR] - [PERMANENT]
+2022-12-26 07:23:25.930 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [11] as [VARCHAR] - [fn3]
+2022-12-26 07:23:25.930 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [12] as [VARCHAR] - [fn3]
+2022-12-26 07:23:25.931 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [13] as [INTEGER] - [1]
+2022-12-26 07:23:25.933 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [14] as [DATE] - [2022-02-26]
+2022-12-26 07:23:25.933 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [15] as [VARCHAR] - [fn3]
+2022-12-26 07:23:25.933 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [16] as [DATE] - [2022-02-26]
+2022-12-26 07:23:25.933 [http-nio-8082-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [17] as [VARCHAR] - [fn3]
+2022-12-26 07:23:25.973 [http-nio-8082-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() RESPONSE ***]: 
+ {
+  "id" : 2,
+  "customerId" : 1,
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}
+2022-12-26 07:23:27.660 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:23:30.385 [http-nio-8082-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2022-12-26 07:23:30.385 [http-nio-8082-exec-4] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2022-12-26 07:23:30.385 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.address_type as address11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.postal_code as postal_16_0_, address0_.start_date as start_d17_0_, address0_.state as state18_0_ from smart_address address0_
+2022-12-26 07:23:30.414 [http-nio-8082-exec-4] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 2,
+  "customerId" : 1,
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+} ]
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2022-12-26 07:28:47.966 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-12-26 07:28:47.971 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 24344 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2022-12-26 07:28:47.973 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2022-12-26 07:28:49.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 07:28:49.854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 298 ms. Found 1 JPA repository interfaces.
+2022-12-26 07:28:50.923 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6816cda6-bf96-3e65-aeaa-e07992819b43
+2022-12-26 07:28:52.253 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-12-26 07:28:52.269 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-12-26 07:28:52.276 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-26 07:28:52.276 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-12-26 07:28:53.875 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-26 07:28:53.876 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5830 ms
+2022-12-26 07:28:55.702 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2022-12-26 07:28:55.785 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2022-12-26 07:28:55.892 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-26 07:28:55.902 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2022-12-26 07:28:55.993 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-26 07:28:57.440 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-26 07:28:57.565 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 07:28:57.703 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-12-26 07:28:57.953 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-26 07:28:58.138 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-26 07:28:59.151 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 07:28:59.166 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 07:28:59.201 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2022-12-26 07:28:59.202 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2022-12-26 07:29:04.221 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-12-26 07:29:05.253 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2022-12-26 07:29:05.365 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-12-26 07:29:05.423 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-12-26 07:29:05.535 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-12-26 07:29:05.536 [main] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-12-26 07:29:05.635 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-12-26 07:29:05.635 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-12-26 07:29:05.635 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-12-26 07:29:05.635 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2022-12-26 07:29:05.635 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-12-26 07:29:05.650 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-12-26 07:29:05.650 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-12-26 07:29:06.151 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2022-12-26 07:29:06.159 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-12-26 07:29:06.162 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-12-26 07:29:06.166 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1672000146166 with initial instances count: 3
+2022-12-26 07:29:06.175 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SMARTADDRESS with eureka with status UP
+2022-12-26 07:29:06.177 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1672000146177, current=UP, previous=STARTING]
+2022-12-26 07:29:06.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-12-26 07:29:06.182 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SMARTADDRESS/SmartAddress:55b6fb029825358fbc1b3141ddb16ae7: registering service...
+2022-12-26 07:29:06.218 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2022-12-26 07:29:06.220 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2022-12-26 07:29:06.277 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SMARTADDRESS/SmartAddress:55b6fb029825358fbc1b3141ddb16ae7 - registration status: 204
+2022-12-26 07:29:06.935 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 20.292 seconds (JVM running for 23.494)
+2022-12-26 07:29:29.701 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 07:29:29.703 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-26 07:29:29.706 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-26 07:29:30.122 [http-nio-8082-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() REQUEST ***]: 
+ {
+  "id" : 0,
+  "customerId" : 1,
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}
+2022-12-26 07:29:30.153 [http-nio-8082-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::create() ***]:
+2022-12-26 07:29:30.266 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into smart_address (proc_app_id, proc_ts, proc_user_id, proc_user_ip_address, proc_user_latitude, proc_user_longitude, vers_id, address_line1, address_line2, address_type, city, country, customer_id, end_date, postal_code, start_date, state) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 07:29:30.290 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [SMART_APP1]
+2022-12-26 07:29:30.293 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2022-12-26 07:29:30.123]
+2022-12-26 07:29:30.298 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [testUser]
+2022-12-26 07:29:30.299 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [0:0:0:0:0:0:0:1]
+2022-12-26 07:29:30.300 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - []
+2022-12-26 07:29:30.300 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - []
+2022-12-26 07:29:30.302 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [0]
+2022-12-26 07:29:30.303 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [fn3]
+2022-12-26 07:29:30.304 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [fn3]
+2022-12-26 07:29:30.304 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [10] as [VARCHAR] - [PERMANENT]
+2022-12-26 07:29:30.304 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [11] as [VARCHAR] - [fn3]
+2022-12-26 07:29:30.304 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [12] as [VARCHAR] - [fn3]
+2022-12-26 07:29:30.306 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [13] as [INTEGER] - [1]
+2022-12-26 07:29:30.308 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [14] as [DATE] - [2022-02-26]
+2022-12-26 07:29:30.309 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [15] as [VARCHAR] - [fn3]
+2022-12-26 07:29:30.310 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [16] as [DATE] - [2022-02-26]
+2022-12-26 07:29:30.310 [http-nio-8082-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [17] as [VARCHAR] - [fn3]
+2022-12-26 07:29:30.806 [http-nio-8082-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() RESPONSE ***]: 
+ {
+  "id" : 3,
+  "customerId" : 1,
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}
+2022-12-26 07:34:05.666 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
