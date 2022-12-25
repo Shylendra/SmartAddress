@@ -119,5 +119,56 @@ public class SmartAddressAssembler {
 
 		return entityObj;
 	}
+	
+	public void mapToEntityForUpdate(Address entityObj, AddressDto obj) {
+		
+		if(StringUtils.isNotEmpty(obj.getAddressType())) {
+			entityObj.setAddressType(obj.getAddressType());
+		}
+		if(StringUtils.isNotEmpty(obj.getAddressLine1())) {
+			entityObj.setAddressLine1(obj.getAddressLine1());
+		}
+		if(StringUtils.isNotEmpty(obj.getAddressLine2())) {
+			entityObj.setAddressLine2(obj.getAddressLine2());
+		}
+		if(StringUtils.isNotEmpty(obj.getCity())) {
+			entityObj.setCity(obj.getCity());
+		}
+		if(StringUtils.isNotEmpty(obj.getState())) {
+			entityObj.setState(obj.getState());
+		}
+		if(StringUtils.isNotEmpty(obj.getCountry())) {
+			entityObj.setCountry(obj.getCountry());
+		}
+		if(StringUtils.isNotEmpty(obj.getPostalCode())) {
+			entityObj.setPostalCode(obj.getPostalCode());
+		}
+		if(entityObj.getStartDate() != null) {
+			entityObj.setStartDate(obj.getSqlStartDate());
+		}
+		if(entityObj.getEndDate() != null) {
+			entityObj.setEndDate(obj.getSqlEndDate());
+		}
+
+		/* Base Entity */
+		if(StringUtils.isNotEmpty(obj.getProcTs())) {
+			entityObj.setProcTs(obj.getSqlProcTs());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
+			entityObj.setProcApprId(obj.getProcApprId());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
+			entityObj.setProcUserId(obj.getProcUserId());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserIpAddress())) {
+			entityObj.setProcUserIpAddress(obj.getProcUserIpAddress());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserLatitude())) {
+			entityObj.setProcUserLatitude(obj.getProcUserLatitude());
+		}
+		if(StringUtils.isNotEmpty(obj.getProcUserLongitude())) {
+			entityObj.setProcUserLongitude(obj.getProcUserLongitude());
+		}
+	}
 
 }

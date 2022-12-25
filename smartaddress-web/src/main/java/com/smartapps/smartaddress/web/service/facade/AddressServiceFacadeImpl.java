@@ -126,7 +126,9 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 
 		Address entityObj = addressService.readById(obj.getId());
 		if(entityObj != null) {
-			AddressDto resObj = assembler.mapToDto(addressService.update(entityObj).get());
+			assembler.mapToEntityForUpdate(entityObj, obj);
+			Address resEntityObj = addressService.update(entityObj).get();
+			AddressDto resObj = assembler.mapToDto(resEntityObj);
 			log.info(messageService.getMessage(
 					SharedMessages.LOG003_RESPONSE, 
 					new Object[]{
