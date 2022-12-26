@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.smartapps.smartaddress.jpa.dto.AddressDto;
 import com.smartapps.smartaddress.jpa.entities.Address;
+import com.smartapps.smartlib.dto.AddressDto;
 import com.smartapps.smartlib.util.SharedMessages;
 import com.smartapps.smartlib.util.SmartLibraryUtil;
 
@@ -102,6 +102,29 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 		
 		List<AddressDto> objList = new ArrayList<>();
 		List<Address> entityObjList = addressService.readByCustomerId(custId);
+		for(Address entityObj: entityObjList) {
+			objList.add(assembler.mapToDto(entityObj));
+		}
+		
+		log.info(messageService.getMessage(
+				SharedMessages.LOG003_RESPONSE, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName(),
+						SmartLibraryUtil.mapToString(objList, true)}));
+		return objList;
+	}
+
+	@Override
+	public List<AddressDto> readByCustomerIdAndAppId(Integer custId, String appId) throws JsonProcessingException {
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		
+		List<AddressDto> objList = new ArrayList<>();
+		List<Address> entityObjList = addressService.readByCustomerIdAndAppId(custId, appId);
 		for(Address entityObj: entityObjList) {
 			objList.add(assembler.mapToDto(entityObj));
 		}

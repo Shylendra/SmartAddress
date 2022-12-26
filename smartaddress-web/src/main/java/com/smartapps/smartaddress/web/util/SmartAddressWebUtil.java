@@ -17,6 +17,9 @@ public class SmartAddressWebUtil {
 	public static final String RETRIEVE_CUSTOMER_ADDRESSES_OPERATION = "Retrieve addresses by customer id";
 	public static final String RETRIEVE_CUSTOMER_ADDRESSES = "api/addresses/customer/{custId}";
 	
+	public static final String RETRIEVE_CUSTOMER_APPID_ADDRESSES_OPERATION = "Retrieve addresses by customer id and appId";
+	public static final String RETRIEVE_CUSTOMER_APPID_ADDRESSES = "api/addresses/customer/{custId}/appid/{appId}";
+	
 	public static final String UPDATE_ADDRESS_OPERATION = "Update address";
 	public static final String UPDATE_ADDRESS = "api/addresses/{id}";
 	

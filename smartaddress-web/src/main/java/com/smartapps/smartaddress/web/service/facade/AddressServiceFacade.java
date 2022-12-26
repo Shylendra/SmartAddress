@@ -3,7 +3,7 @@ package com.smartapps.smartaddress.web.service.facade;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.smartapps.smartaddress.jpa.dto.AddressDto;
+import com.smartapps.smartlib.dto.AddressDto;
 
 public interface AddressServiceFacade {
 
@@ -11,6 +11,7 @@ public interface AddressServiceFacade {
 	public List<AddressDto> retrieveAll() throws JsonProcessingException;
 	public AddressDto retrieveById(final Integer id);
 	public List<AddressDto> retrieveByCustomerId(final Integer custId) throws JsonProcessingException;
+	public List<AddressDto> readByCustomerIdAndAppId(final Integer custId, final String appId) throws JsonProcessingException;
 	public AddressDto update(final AddressDto obj) throws JsonProcessingException;
 	public void deleteById(final Integer id);
 

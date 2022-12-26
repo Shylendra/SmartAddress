@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import javax.ws.rs.core.MediaType;
 
 import org.jboss.logging.MDC;
 import org.springframework.http.ResponseEntity;
@@ -20,12 +21,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.smartapps.smartaddress.jpa.dto.AddressDto;
 import com.smartapps.smartaddress.web.util.SmartAddressWebUtil;
 import com.smartapps.smartlib.annotations.GlobalApiReponsesDelete;
 import com.smartapps.smartlib.annotations.GlobalApiReponsesGet;
 import com.smartapps.smartlib.annotations.GlobalApiReponsesPost;
 import com.smartapps.smartlib.annotations.GlobalApiReponsesPut;
+import com.smartapps.smartlib.dto.AddressDto;
 import com.smartapps.smartlib.util.SmartHttpUtil;
 import com.smartapps.smartlib.validators.annotations.ValidAppId;
 
@@ -37,7 +38,7 @@ import lombok.extern.slf4j.Slf4j;
 //@CrossOrigin(origins = "http://localhost:4200/", maxAge = 3600)
 @RestController
 @Validated
-@RequestMapping(SmartAddressWebUtil.CONTEXT_ROOT)
+@RequestMapping(path = SmartAddressWebUtil.CONTEXT_ROOT, produces = MediaType.APPLICATION_JSON)
 public class SmartAddressController extends CommonController {
 
 	@Operation(summary = SmartAddressWebUtil.REGISTER_ADDRESS_OPERATION)
@@ -84,6 +85,15 @@ public class SmartAddressController extends CommonController {
 	public ResponseEntity<List<AddressDto>> retrieveByCustomerId(
 			@PathVariable("custId") @Valid Integer custId) throws JsonProcessingException {
 		return ResponseEntity.ok().body(addressServiceFacade.retrieveByCustomerId(custId));
+	}
+
+	@Operation(summary = SmartAddressWebUtil.RETRIEVE_CUSTOMER_APPID_ADDRESSES_OPERATION)
+	@GlobalApiReponsesGet
+	@GetMapping(SmartAddressWebUtil.RETRIEVE_CUSTOMER_APPID_ADDRESSES)
+	public ResponseEntity<List<AddressDto>> readByCustomerIdAndAppId(
+			@PathVariable("custId") @Valid Integer custId,
+			@PathVariable("appId") @Valid String appId) throws JsonProcessingException {
+		return ResponseEntity.ok().body(addressServiceFacade.readByCustomerIdAndAppId(custId, appId));
 	}
 
 	@Operation(summary = SmartAddressWebUtil.UPDATE_ADDRESS_OPERATION)

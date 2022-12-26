@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "db657ef5-f1a7-4c4b-8bca-48dacb5d8100",
+		"_postman_id": "913c0b8a-0fe7-4e29-adfd-06986ec7d919",
 		"name": "smartaddress-api",
 		"description": "SmartAddress REST API Information",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -36,31 +36,33 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "1"
+											"value": "38413131",
+											"description": "(Required) "
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"name": "Successfully retrieved NEW2.",
+									"name": "Successfully retrieved.",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -76,7 +78,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+									"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 								},
 								{
 									"name": "Bad request.",
@@ -84,19 +86,20 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -104,15 +107,15 @@
 									},
 									"status": "Bad Request",
 									"code": 400,
-									"_postman_previewlanguage": "json",
+									"_postman_previewlanguage": "text",
 									"header": [
 										{
 											"key": "Content-Type",
-											"value": "application/json"
+											"value": "*/*"
 										}
 									],
 									"cookie": [],
-									"body": "{}"
+									"body": ""
 								},
 								{
 									"name": "You are not authorized to access the resource.",
@@ -120,19 +123,20 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -148,7 +152,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+									"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 								},
 								{
 									"name": "Accessing the resource you were trying to reach is forbidden.",
@@ -156,19 +160,20 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -184,7 +189,7 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+									"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 								},
 								{
 									"name": "The resource you were trying to reach is not found.",
@@ -192,19 +197,20 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -212,15 +218,15 @@
 									},
 									"status": "Not Found",
 									"code": 404,
-									"_postman_previewlanguage": "json",
+									"_postman_previewlanguage": "text",
 									"header": [
 										{
 											"key": "Content-Type",
-											"value": "application/json"
+											"value": "*/*"
 										}
 									],
 									"cookie": [],
-									"body": "{}"
+									"body": ""
 								}
 							]
 						},
@@ -230,6 +236,21 @@
 								"method": "PUT",
 								"header": [
 									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "SMART_APP1"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "testUser"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "ADMIN"
+									},
+									{
 										"key": "Content-Type",
 										"value": "application/json"
 									},
@@ -238,25 +259,9 @@
 										"value": "application/json"
 									},
 									{
-										"key": "APP_ID",
-										"value": "SMART_APP1",
-										"type": "text"
-									},
-									{
-										"key": "USER_ID",
-										"value": "testUser",
-										"type": "text"
-									},
-									{
-										"key": "USER_GROUPS",
-										"value": "ADMIN",
-										"type": "text"
-									},
-									{
 										"key": "Authorization",
 										"value": "",
-										"type": "text",
-										"disabled": true
+										"type": "text"
 									}
 								],
 								"body": {
@@ -282,20 +287,37 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "1"
+											"value": "3",
+											"description": "(Required) "
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"name": "Successfully retrieved NEW2.",
+									"name": "Successfully retrieved.",
 									"originalRequest": {
 										"method": "PUT",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+											"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -303,19 +325,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -331,16 +354,32 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+									"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 								},
 								{
 									"name": "Bad request.",
 									"originalRequest": {
 										"method": "PUT",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+											"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -348,19 +387,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -368,24 +408,40 @@
 									},
 									"status": "Bad Request",
 									"code": 400,
-									"_postman_previewlanguage": "json",
+									"_postman_previewlanguage": "text",
 									"header": [
 										{
 											"key": "Content-Type",
-											"value": "application/json"
+											"value": "*/*"
 										}
 									],
 									"cookie": [],
-									"body": "{}"
+									"body": ""
 								},
 								{
 									"name": "You are not authorized to access the resource.",
 									"originalRequest": {
 										"method": "PUT",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+											"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -393,19 +449,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -421,16 +478,32 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+									"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 								},
 								{
 									"name": "Accessing the resource you were trying to reach is forbidden.",
 									"originalRequest": {
 										"method": "PUT",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+											"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -438,19 +511,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -466,16 +540,32 @@
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+									"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 								},
 								{
 									"name": "The resource you were trying to reach is not found.",
 									"originalRequest": {
 										"method": "PUT",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+											"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -483,19 +573,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -503,15 +594,15 @@
 									},
 									"status": "Not Found",
 									"code": 404,
-									"_postman_previewlanguage": "json",
+									"_postman_previewlanguage": "text",
 									"header": [
 										{
 											"key": "Content-Type",
-											"value": "application/json"
+											"value": "*/*"
 										}
 									],
 									"cookie": [],
-									"body": "{}"
+									"body": ""
 								}
 							]
 						},
@@ -521,29 +612,23 @@
 								"method": "DELETE",
 								"header": [
 									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "SMART_APP1"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "testUser"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "ADMIN"
+									},
+									{
 										"key": "Accept",
 										"value": "application/json"
-									},
-									{
-										"key": "APP_ID",
-										"value": "SMART_APP1",
-										"type": "text"
-									},
-									{
-										"key": "USER_ID",
-										"value": "testUser",
-										"type": "text"
-									},
-									{
-										"key": "USER_GROUPS",
-										"value": "ADMIN",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "",
-										"type": "text",
-										"disabled": true
 									}
 								],
 								"url": {
@@ -560,31 +645,102 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "1"
+											"value": "3",
+											"description": "(Required) "
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"name": "Bad request.",
+									"name": "OK",
 									"originalRequest": {
 										"method": "DELETE",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "\"sit nostrud\""
+								},
+								{
+									"name": "Bad request.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -592,35 +748,52 @@
 									},
 									"status": "Bad Request",
 									"code": 400,
-									"_postman_previewlanguage": "json",
+									"_postman_previewlanguage": "text",
 									"header": [
 										{
 											"key": "Content-Type",
-											"value": "application/json"
+											"value": "*/*"
 										}
 									],
 									"cookie": [],
-									"body": "{}"
+									"body": ""
 								},
 								{
 									"name": "The resource you were trying to reach is not found.",
 									"originalRequest": {
 										"method": "DELETE",
-										"header": [],
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "APP_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_ID",
+												"value": "sit nostrud"
+											},
+											{
+												"description": "(Required) ",
+												"key": "USER_GROUPS",
+												"value": "sit nostrud"
+											}
+										],
 										"url": {
-											"raw": "{{baseUrl}}/smartaddress-api/addresses/:id",
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/:id",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"smartaddress-api",
+												"api",
 												"addresses",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "-96848153",
+													"value": "38413131",
 													"description": "(Required) "
 												}
 											]
@@ -628,6 +801,83 @@
 									},
 									"status": "Not Found",
 									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "customer/{custId}",
+					"item": [
+						{
+							"name": "/api/addresses/customer/{custId}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"api",
+										"addresses",
+										"customer",
+										":custId"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successfully retrieved.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
@@ -636,175 +886,427 @@
 										}
 									],
 									"cookie": [],
-									"body": "{}"
+									"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
+								},
+								{
+									"name": "Bad request.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "You are not authorized to access the resource.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
+								},
+								{
+									"name": "Accessing the resource you were trying to reach is forbidden.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
+								},
+								{
+									"name": "The resource you were trying to reach is not found.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
 								}
 							]
-						}
-					]
-				},
-				{
-					"name": "/actuator/gateway/routes",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/actuator/gateway/routes/",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"actuator",
-								"gateway",
-								"routes",
-								""
+						},
+						{
+							"name": "/api/addresses/customer/{custId}/appid/{appId}",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId/appid/:appId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"smartaddress-api",
+										"api",
+										"addresses",
+										"customer",
+										":custId",
+										"appid",
+										":appId"
+									],
+									"variable": [
+										{
+											"key": "custId",
+											"value": "1",
+											"description": "(Required) "
+										},
+										{
+											"key": "appId",
+											"value": "SMART_APP1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successfully retrieved.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId/appid/:appId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId",
+												"appid",
+												":appId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												},
+												{
+													"key": "appId",
+													"value": "sit nostrud",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
+								},
+								{
+									"name": "Bad request.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId/appid/:appId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId",
+												"appid",
+												":appId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												},
+												{
+													"key": "appId",
+													"value": "sit nostrud",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "You are not authorized to access the resource.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId/appid/:appId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId",
+												"appid",
+												":appId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												},
+												{
+													"key": "appId",
+													"value": "sit nostrud",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
+								},
+								{
+									"name": "Accessing the resource you were trying to reach is forbidden.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId/appid/:appId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId",
+												"appid",
+												":appId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												},
+												{
+													"key": "appId",
+													"value": "sit nostrud",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
+								},
+								{
+									"name": "The resource you were trying to reach is not found.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId/appid/:appId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"smartaddress-api",
+												"api",
+												"addresses",
+												"customer",
+												":custId",
+												"appid",
+												":appId"
+											],
+											"variable": [
+												{
+													"key": "custId",
+													"value": "38413131",
+													"description": "(Required) "
+												},
+												{
+													"key": "appId",
+													"value": "sit nostrud",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
 							]
-						}
-					},
-					"response": [
-						{
-							"name": "Successfully retrieved NEW2.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Bad request.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses"
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"name": "You are not authorized to access the resource.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses"
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Accessing the resource you were trying to reach is forbidden.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses"
-									]
-								}
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "The resource you were trying to reach is not found.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses"
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
 						}
 					]
 				},
@@ -832,17 +1334,18 @@
 					},
 					"response": [
 						{
-							"name": "Successfully retrieved NEW2.",
+							"name": "Successfully retrieved.",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
@@ -857,7 +1360,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
+							"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
 						},
 						{
 							"name": "Bad request.",
@@ -865,27 +1368,28 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": "json",
+							"_postman_previewlanguage": "text",
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "*/*"
 								}
 							],
 							"cookie": [],
-							"body": "{}"
+							"body": ""
 						},
 						{
 							"name": "You are not authorized to access the resource.",
@@ -893,12 +1397,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
@@ -913,7 +1418,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
+							"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
 						},
 						{
 							"name": "Accessing the resource you were trying to reach is forbidden.",
@@ -921,12 +1426,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
@@ -941,7 +1447,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
+							"body": "[\n  {\n    \"id\": -72102648,\n    \"customerId\": -56712714,\n    \"addressType\": \"ex eu\",\n    \"addressLine1\": \"dolor dolore\",\n    \"addressLine2\": \"et sunt sed reprehenderit\",\n    \"city\": \"mollit sint consequat\",\n    \"state\": \"consectetur dolor cupidatat sunt id\",\n    \"country\": \"do dolore proident quis tempor\",\n    \"postalCode\": \"tempor sunt cillum aliquip elit\",\n    \"startDate\": \"aliqua incididunt minim in consequat\",\n    \"endDate\": \"Ut enim nulla\"\n  },\n  {\n    \"id\": 2707253,\n    \"customerId\": -82745264,\n    \"addressType\": \"dolore elit qui nostrud\",\n    \"addressLine1\": \"labore magna\",\n    \"addressLine2\": \"laboris voluptate est ad\",\n    \"city\": \"laboris deserunt in\",\n    \"state\": \"est et\",\n    \"country\": \"aliquip mollit\",\n    \"postalCode\": \"anim dolore veniam\",\n    \"startDate\": \"in irure\",\n    \"endDate\": \"ea est aliqua aliq\"\n  }\n]"
 						},
 						{
 							"name": "The resource you were trying to reach is not found.",
@@ -949,27 +1455,28 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
 							},
 							"status": "Not Found",
 							"code": 404,
-							"_postman_previewlanguage": "json",
+							"_postman_previewlanguage": "text",
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "*/*"
 								}
 							],
 							"cookie": [],
-							"body": "{}"
+							"body": ""
 						}
 					]
 				},
@@ -979,27 +1486,27 @@
 						"method": "POST",
 						"header": [
 							{
+								"description": "(Required) ",
+								"key": "APP_ID",
+								"value": "SMART_APP1"
+							},
+							{
+								"description": "(Required) ",
+								"key": "USER_ID",
+								"value": "testUser"
+							},
+							{
+								"description": "(Required) ",
+								"key": "USER_GROUPS",
+								"value": "ADMIN"
+							},
+							{
 								"key": "Content-Type",
 								"value": "application/json"
 							},
 							{
 								"key": "Accept",
 								"value": "application/json"
-							},
-							{
-								"key": "APP_ID",
-								"value": "SMART_APP1",
-								"type": "text"
-							},
-							{
-								"key": "USER_ID",
-								"value": "testUser",
-								"type": "text"
-							},
-							{
-								"key": "USER_GROUPS",
-								"value": "ADMIN",
-								"type": "text"
 							},
 							{
 								"key": "Authorization",
@@ -1010,7 +1517,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"customerId\": 10,\n    \"addressType\": \"PERMANENT\",\n    \"addressLine1\": \"fn3\",\n    \"addressLine2\": \"fn3\",\n    \"city\": \"fn3\",\n    \"state\": \"fn3\",\n    \"country\": \"fn3\",\n    \"postalCode\": \"fn3\",\n    \"startDate\": \"2022-02-26\",\n    \"endDate\": \"2022-02-26\",\n    \"latitude\": \"latitude3\",\n    \"longitude\": \"longitude3\",\n    \"procTs\": \"2020-05-01 12:30:00\"\n}",
+							"raw": "{\n    \"customerId\": 1,\n    \"addressType\": \"PERMANENT\",\n    \"addressLine1\": \"fn3\",\n    \"addressLine2\": \"fn3\",\n    \"city\": \"fn3\",\n    \"state\": \"fn3\",\n    \"country\": \"fn3\",\n    \"postalCode\": \"fn3\",\n    \"startDate\": \"2022-02-26\",\n    \"endDate\": \"2022-02-26\",\n    \"latitude\": \"latitude3\",\n    \"longitude\": \"longitude3\",\n    \"procTs\": \"2020-05-01 12:30:00\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1031,13 +1538,29 @@
 					},
 					"response": [
 						{
-							"name": "Successfully retrieved NEW2.",
+							"name": "Successfully retrieved.",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "sit nostrud"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+									"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1045,12 +1568,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
@@ -1065,16 +1589,32 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+							"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 						},
 						{
 							"name": "Bad request.",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "sit nostrud"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+									"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1082,36 +1622,53 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": "json",
+							"_postman_previewlanguage": "text",
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "*/*"
 								}
 							],
 							"cookie": [],
-							"body": "{}"
+							"body": ""
 						},
 						{
 							"name": "You are not authorized to access the resource.",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "sit nostrud"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+									"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1119,12 +1676,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
@@ -1139,16 +1697,32 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+							"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 						},
 						{
 							"name": "Accessing the resource you were trying to reach is forbidden.",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "sit nostrud"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+									"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1156,12 +1730,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
@@ -1176,16 +1751,32 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}"
+							"body": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}"
 						},
 						{
 							"name": "The resource you were trying to reach is not found.",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "APP_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_ID",
+										"value": "sit nostrud"
+									},
+									{
+										"description": "(Required) ",
+										"key": "USER_GROUPS",
+										"value": "sit nostrud"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"id\": 54584174,\n  \"customerId\": -23302507,\n  \"appId\": \"nisi \",\n  \"addressLine1\": \"Duis\",\n  \"addressLine2\": \"sunt\",\n  \"city\": \"deserunt \",\n  \"state\": \"ad aliqua aliquip aute\",\n  \"country\": \"sed labore est commodo cillum\",\n  \"postalCode\": \"nisi nulla dolore cupidatat\",\n  \"startDate\": \"in dolor\",\n  \"endDate\": \"ipsum sunt\",\n  \"latitude\": \"dolore cillum dolor aute\",\n  \"longitude\": \"velit incididunt\"\n}",
+									"raw": "{\n  \"id\": 65414812,\n  \"customerId\": 38872636,\n  \"addressType\": \"culpa esse ea ut\",\n  \"addressLine1\": \"volup\",\n  \"addressLine2\": \"Ut irure Duis sint\",\n  \"city\": \"aliqua velit pariatur tempor\",\n  \"state\": \"dolor deserunt id\",\n  \"country\": \"pariatur elit eu\",\n  \"postalCode\": \"do nisi est sit\",\n  \"startDate\": \"nostrud reprehenderit aute\",\n  \"endDate\": \"i\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1193,1117 +1784,142 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses",
+									"raw": "{{baseUrl}}/smartaddress-api/api/addresses",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"smartaddress-api",
+										"api",
 										"addresses"
 									]
 								}
 							},
 							"status": "Not Found",
 							"code": 404,
-							"_postman_previewlanguage": "json",
+							"_postman_previewlanguage": "text",
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "*/*"
 								}
 							],
 							"cookie": [],
-							"body": "{}"
-						}
-					]
-				},
-				{
-					"name": "/api/addresses/customer/{custId}",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/smartaddress-api/api/addresses/customer/:custId",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"smartaddress-api",
-								"api",
-								"addresses",
-								"customer",
-								":custId"
-							],
-							"variable": [
-								{
-									"key": "custId",
-									"value": "10",
-									"description": "(Required) "
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Successfully retrieved NEW2.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Bad request.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"name": "You are not authorized to access the resource.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Accessing the resource you were trying to reach is forbidden.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "The resource you were trying to reach is not found.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						}
-					]
-				},
-				{
-					"name": "/actuator",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/actuator",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"actuator"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Successfully retrieved NEW2.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Bad request.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"name": "You are not authorized to access the resource.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Accessing the resource you were trying to reach is forbidden.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "The resource you were trying to reach is not found.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						}
-					]
-				},
-				{
-					"name": "/actuator/health",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/actuator/health",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"actuator",
-								"health"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Successfully retrieved NEW2.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Bad request.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"name": "You are not authorized to access the resource.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Accessing the resource you were trying to reach is forbidden.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "The resource you were trying to reach is not found.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						}
-					]
-				},
-				{
-					"name": "/actuator/info",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/actuator/info",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"actuator",
-								"info"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Successfully retrieved NEW2.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Bad request.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"name": "You are not authorized to access the resource.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Accessing the resource you were trying to reach is forbidden.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "The resource you were trying to reach is not found.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						}
-					]
-				},
-				{
-					"name": "/actuator/metrics",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/actuator/metrics",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"actuator",
-								"metrics"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Successfully retrieved NEW2.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Bad request.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"name": "You are not authorized to access the resource.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "Accessing the resource you were trying to reach is forbidden.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Forbidden",
-							"code": 403,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "[\n  {\n    \"id\": 67865781,\n    \"customerId\": 25048725,\n    \"appId\": \"ut\",\n    \"addressLine1\": \"ipsum culpa\",\n    \"addressLine2\": \"laborum cupidatat velit\",\n    \"city\": \"dolore laboris qui laborum\",\n    \"state\": \"quis esse ullamco sunt cupidatat\",\n    \"country\": \"tempor amet ad\",\n    \"postalCode\": \"deserunt Ut\",\n    \"startDate\": \"sunt\",\n    \"endDate\": \"minim ut consectetur\",\n    \"latitude\": \"sit Excepteur nulla\",\n    \"longitude\": \"cupidatat amet commodo nostrud\"\n  },\n  {\n    \"id\": 78828512,\n    \"customerId\": -20355980,\n    \"appId\": \"l\",\n    \"addressLine1\": \"dolore\",\n    \"addressLine2\": \"non cupidatat sit enim\",\n    \"city\": \"exercitation laborum con\",\n    \"state\": \"dolore sit\",\n    \"country\": \"dolor\",\n    \"postalCode\": \"dolor sed\",\n    \"startDate\": \"ex consectetur\",\n    \"endDate\": \"Ut occaecat incidi\",\n    \"latitude\": \"laboris in\",\n    \"longitude\": \"Ut veniam\"\n  }\n]"
-						},
-						{
-							"name": "The resource you were trying to reach is not found.",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/smartaddress-api/addresses/customer/:custId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"smartaddress-api",
-										"addresses",
-										"customer",
-										":custId"
-									],
-									"variable": [
-										{
-											"key": "custId",
-											"value": "-96848153",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
+							"body": ""
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "https://s3.cloudLocation.amazonaws.com/smartapps-assets/image/SMART-PROFILE/USER001/ALBUM/Front_20220618071824.jpeg",
+			"name": "health",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
 				"url": {
-					"raw": "https://s3.cloudLocation.amazonaws.com/smartapps-assets/image/SMART-PROFILE/USER001/ALBUM/Front_20220618071824.jpeg",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/",
 					"host": [
-						"s3",
-						"cloudLocation",
-						"amazonaws",
-						"com"
+						"{{baseUrl}}"
 					],
 					"path": [
-						"smartapps-assets",
-						"image",
-						"SMART-PROFILE",
-						"USER001",
-						"ALBUM",
-						"Front_20220618071824.jpeg"
+						""
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				},
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
 		}
 	],
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "http://localhost:8080",
+			"value": "http://localhost:8082",
 			"type": "string"
 		}
 	]

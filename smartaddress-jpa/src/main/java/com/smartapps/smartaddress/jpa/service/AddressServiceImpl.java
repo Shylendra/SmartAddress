@@ -3,7 +3,6 @@ package com.smartapps.smartaddress.jpa.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.codehaus.plexus.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -67,6 +66,16 @@ public class AddressServiceImpl implements AddressService {
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
 		return repository.findByCustomerId(custId);
+	}
+
+	@Override
+	public List<Address> readByCustomerIdAndAppId(Integer custId, String appId) {
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		return repository.findByCustomerIdAndProcApprId(custId, appId);
 	}
 
 	@Override

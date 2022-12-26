@@ -3,8 +3,8 @@ package com.smartapps.smartaddress.web.assemblers;
 import org.codehaus.plexus.util.StringUtils;
 import org.springframework.stereotype.Component;
 
-import com.smartapps.smartaddress.jpa.dto.AddressDto;
 import com.smartapps.smartaddress.jpa.entities.Address;
+import com.smartapps.smartlib.dto.AddressDto;
 
 @Component
 public class SmartAddressAssembler {
@@ -122,6 +122,7 @@ public class SmartAddressAssembler {
 	
 	public void mapToEntityForUpdate(Address entityObj, AddressDto obj) {
 		
+		entityObj.setCustomerId(obj.getCustomerId());
 		if(StringUtils.isNotEmpty(obj.getAddressType())) {
 			entityObj.setAddressType(obj.getAddressType());
 		}
