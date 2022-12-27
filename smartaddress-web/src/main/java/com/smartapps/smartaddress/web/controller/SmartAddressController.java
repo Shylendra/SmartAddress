@@ -35,7 +35,6 @@ import io.swagger.v3.oas.annotations.Parameter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-//@CrossOrigin(origins = "http://localhost:4200/", maxAge = 3600)
 @RestController
 @Validated
 @RequestMapping(path = SmartAddressWebUtil.CONTEXT_ROOT, produces = MediaType.APPLICATION_JSON)
