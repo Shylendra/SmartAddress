@@ -9,6 +9,7 @@ import com.smartapps.smartaddress.jpa.entities.Address;
 
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Integer> {
-	List<Address> findByCustomerId(final int customerId);
-	List<Address> findByCustomerIdAndProcApprId(final int customerId, final String appId);
+	List<Address> findAllByOrderByProcTsDesc();
+	List<Address> findByCustomerIdOrderByProcTsDesc(final int customerId);
+	List<Address> findByCustomerIdAndProcApprIdOrderByProcTsDesc(final int customerId, final String appId);
 }

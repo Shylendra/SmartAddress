@@ -40,7 +40,7 @@ public class AddressServiceImpl implements AddressService {
 				new Object[]{
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
-		return repository.findAll();
+		return repository.findAllByOrderByProcTsDesc();
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class AddressServiceImpl implements AddressService {
 				new Object[]{
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
-		return repository.findByCustomerId(custId);
+		return repository.findByCustomerIdOrderByProcTsDesc(custId);
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class AddressServiceImpl implements AddressService {
 				new Object[]{
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
-		return repository.findByCustomerIdAndProcApprId(custId, appId);
+		return repository.findByCustomerIdAndProcApprIdOrderByProcTsDesc(custId, appId);
 	}
 
 	@Override

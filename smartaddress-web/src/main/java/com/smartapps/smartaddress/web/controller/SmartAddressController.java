@@ -46,7 +46,7 @@ public class SmartAddressController extends CommonController {
 	public ResponseEntity<AddressDto> register(
 			@RequestHeader(value = SmartHttpUtil.APP_ID_HEADER, required = true) @ValidAppId String appId,
 			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
-			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = true) String userGroups,
+			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = false) String userGroups,
 			@Parameter(name = "registerAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address,
 			HttpServletRequest request) 
 			throws JsonProcessingException {
@@ -101,7 +101,7 @@ public class SmartAddressController extends CommonController {
 	public ResponseEntity<AddressDto> update(
 			@RequestHeader(value = SmartHttpUtil.APP_ID_HEADER, required = true) @ValidAppId String appId,
 			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
-			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = true) String userGroups,
+			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = false) String userGroups,
 			@PathVariable("id") @Valid Integer id,
 			@Parameter(name = "updateAddress", description = "JSON with request object in and out", required = true) @Valid @RequestBody AddressDto address,
 			HttpServletRequest request) 
@@ -125,7 +125,7 @@ public class SmartAddressController extends CommonController {
 	public ResponseEntity<String> deleteById(
 			@RequestHeader(value = SmartHttpUtil.APP_ID_HEADER, required = true) @ValidAppId String appId,
 			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
-			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = true) String userGroups,
+			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = false) String userGroups,
 			@PathVariable("id") @Valid Integer id) {
 		
 		/** Logging **/
