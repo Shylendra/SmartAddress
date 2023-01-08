@@ -38,7 +38,7 @@ public class Address extends CommonEntity implements Serializable {
 	private int id;
 	
 	@Column(name = "CUSTOMER_ID")
-	private int customerId;
+	private String customerId;
 	
 	@Column(name = "ADDRESS_TYPE")
 	@Convert(converter = TrimConverter.class)

@@ -93,7 +93,7 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 	}
 
 	@Override
-	public List<AddressDto> retrieveByCustomerId(Integer custId) throws JsonProcessingException {
+	public List<AddressDto> retrieveByCustomerId(String custId) throws JsonProcessingException {
 		log.info(messageService.getMessage(
 				SharedMessages.LOG001_PREFIX, 
 				new Object[]{
@@ -116,7 +116,7 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 	}
 
 	@Override
-	public List<AddressDto> readByCustomerIdAndAppId(Integer custId, String appId) throws JsonProcessingException {
+	public List<AddressDto> readByCustomerIdAndAppId(String custId, String appId) throws JsonProcessingException {
 		log.info(messageService.getMessage(
 				SharedMessages.LOG001_PREFIX, 
 				new Object[]{

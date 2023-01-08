@@ -13,8 +13,8 @@ public interface AddressService {
 	/* Read */
 	public List<Address> readAll();
 	public Address readById(final Integer id);
-	public List<Address> readByCustomerId(final Integer custId);
-	public List<Address> readByCustomerIdAndAppId(final Integer custId, final String appId);
+	public List<Address> readByCustomerId(final String custId);
+	public List<Address> readByCustomerIdAndAppId(final String custId, final String appId);
 	
 	/* Update */
 	public Optional<Address> update(final Address obj);

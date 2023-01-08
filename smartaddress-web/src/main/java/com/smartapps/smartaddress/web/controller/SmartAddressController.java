@@ -82,7 +82,7 @@ public class SmartAddressController extends CommonController {
 	@GlobalApiReponsesGet
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_CUSTOMER_ADDRESSES)
 	public ResponseEntity<List<AddressDto>> retrieveByCustomerId(
-			@PathVariable("custId") @Valid Integer custId) throws JsonProcessingException {
+			@PathVariable("custId") @Valid String custId) throws JsonProcessingException {
 		return ResponseEntity.ok().body(addressServiceFacade.retrieveByCustomerId(custId));
 	}
 
@@ -90,7 +90,7 @@ public class SmartAddressController extends CommonController {
 	@GlobalApiReponsesGet
 	@GetMapping(SmartAddressWebUtil.RETRIEVE_CUSTOMER_APPID_ADDRESSES)
 	public ResponseEntity<List<AddressDto>> readByCustomerIdAndAppId(
-			@PathVariable("custId") @Valid Integer custId,
+			@PathVariable("custId") @Valid String custId,
 			@PathVariable("appId") @Valid String appId) throws JsonProcessingException {
 		return ResponseEntity.ok().body(addressServiceFacade.readByCustomerIdAndAppId(custId, appId));
 	}

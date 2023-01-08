@@ -10,8 +10,8 @@ public interface AddressServiceFacade {
 	public AddressDto register(final AddressDto obj) throws JsonProcessingException;
 	public List<AddressDto> retrieveAll() throws JsonProcessingException;
 	public AddressDto retrieveById(final Integer id);
-	public List<AddressDto> retrieveByCustomerId(final Integer custId) throws JsonProcessingException;
-	public List<AddressDto> readByCustomerIdAndAppId(final Integer custId, final String appId) throws JsonProcessingException;
+	public List<AddressDto> retrieveByCustomerId(final String custId) throws JsonProcessingException;
+	public List<AddressDto> readByCustomerIdAndAppId(final String custId, final String appId) throws JsonProcessingException;
 	public AddressDto update(final AddressDto obj) throws JsonProcessingException;
 	public void deleteById(final Integer id);
 

@@ -59,7 +59,7 @@ public class AddressServiceImpl implements AddressService {
 	}
 
 	@Override
-	public List<Address> readByCustomerId(Integer custId) {
+	public List<Address> readByCustomerId(String custId) {
 		log.info(messageService.getMessage(
 				SharedMessages.LOG001_PREFIX, 
 				new Object[]{
@@ -69,7 +69,7 @@ public class AddressServiceImpl implements AddressService {
 	}
 
 	@Override
-	public List<Address> readByCustomerIdAndAppId(Integer custId, String appId) {
+	public List<Address> readByCustomerIdAndAppId(String custId, String appId) {
 		log.info(messageService.getMessage(
 				SharedMessages.LOG001_PREFIX, 
 				new Object[]{
