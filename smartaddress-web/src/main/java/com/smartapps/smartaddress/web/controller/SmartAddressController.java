@@ -56,9 +56,8 @@ public class SmartAddressController extends CommonController {
 		MDC.put(SmartHttpUtil.USER_ID_HEADER, userId);
 		MDC.put(SmartHttpUtil.USER_GROUPS_HEADER, userGroups);
 
-		address.setProcApprId(appId);
-		address.setProcUserId(userId);
-		address.setProcUserIpAddress(SmartHttpUtil.getIpAddress(request));
+		address.setProcAppId(appId);
+		address.setProcUserId(userId);		address.setProcUserIpAddress(SmartHttpUtil.getIpAddress(request));
 		return ResponseEntity.ok().body(addressServiceFacade.register(address));
 	}
 
@@ -113,7 +112,7 @@ public class SmartAddressController extends CommonController {
 		MDC.put(SmartHttpUtil.USER_GROUPS_HEADER, userGroups);
 
 		address.setId(id);
-		address.setProcApprId(appId);
+		address.setProcAppId(appId);
 		address.setProcUserId(userId);
 		address.setProcUserIpAddress(SmartHttpUtil.getIpAddress(request));
 		return ResponseEntity.ok().body(addressServiceFacade.update(address));

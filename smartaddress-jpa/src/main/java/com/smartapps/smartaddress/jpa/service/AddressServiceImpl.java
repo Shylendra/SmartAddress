@@ -75,7 +75,7 @@ public class AddressServiceImpl implements AddressService {
 				new Object[]{
 						this.getClass().getSimpleName(), 
 						new Object(){}.getClass().getEnclosingMethod().getName()}));
-		return repository.findByCustomerIdAndProcApprIdOrderByProcTsDesc(custId, appId);
+		return repository.findByCustomerIdAndProcAppIdOrderByProcTsDesc(custId, appId);
 	}
 
 	@Override

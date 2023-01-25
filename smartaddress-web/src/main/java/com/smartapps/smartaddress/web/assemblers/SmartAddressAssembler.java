@@ -47,8 +47,8 @@ public class SmartAddressAssembler {
 		if(entityObj.getProcTs() != null) {
 			obj.setProcTs(entityObj.getProcTs().toString());
 		}
-		if(StringUtils.isNotEmpty(entityObj.getProcApprId())) {
-			obj.setProcApprId(entityObj.getProcApprId());
+		if(StringUtils.isNotEmpty(entityObj.getProcAppId())) {
+			obj.setProcAppId(entityObj.getProcAppId());
 		}
 		if(StringUtils.isNotEmpty(entityObj.getProcUserId())) {
 			obj.setProcUserId(entityObj.getProcUserId());
@@ -101,8 +101,8 @@ public class SmartAddressAssembler {
 		if(StringUtils.isNotEmpty(obj.getProcTs())) {
 			entityObj.setProcTs(obj.getSqlProcTs());
 		}
-		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
-			entityObj.setProcApprId(obj.getProcApprId());
+		if(StringUtils.isNotEmpty(obj.getProcAppId())) {
+			entityObj.setProcAppId(obj.getProcAppId());
 		}
 		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
 			entityObj.setProcUserId(obj.getProcUserId());
@@ -155,8 +155,8 @@ public class SmartAddressAssembler {
 		if(StringUtils.isNotEmpty(obj.getProcTs())) {
 			entityObj.setProcTs(obj.getSqlProcTs());
 		}
-		if(StringUtils.isNotEmpty(obj.getProcApprId())) {
-			entityObj.setProcApprId(obj.getProcApprId());
+		if(StringUtils.isNotEmpty(obj.getProcAppId())) {
+			entityObj.setProcAppId(obj.getProcAppId());
 		}
 		if(StringUtils.isNotEmpty(obj.getProcUserId())) {
 			entityObj.setProcUserId(obj.getProcUserId());
