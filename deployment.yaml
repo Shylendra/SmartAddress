@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartaddress-api
+  labels:
+    app: smartaddress-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smartaddress-api
+  template:
+    metadata:
+      labels:
+        app: smartaddress-api
+    spec:
+      containers:
+        - name: smartaddress-api
+          image: shylendra2015/smartaddress-api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smartaddress-api-svc
+spec:
+  ports:
+    - port: 80
+      targetPort: 8082
+      protocol: TCP
+  selector:
+    app: smartaddress-api
