@@ -14,5 +14,7 @@ public interface AddressServiceFacade {
 	public List<AddressDto> readByCustomerIdAndAppId(final String custId, final String appId) throws JsonProcessingException;
 	public AddressDto update(final AddressDto obj) throws JsonProcessingException;
 	public void deleteById(final Integer id);
+	public void deleteByCustomerId(final String customerId);
+	public void deleteByCustomerIdIn(final List<String> customerIds);
 
 }

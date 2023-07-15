@@ -99,4 +99,27 @@ public class AddressServiceImpl implements AddressService {
 		repository.deleteById(readById(id).getId());
 	}
 
+	@Override
+	public void deleteByCustomerId(String customerId) {
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		List<Address> custAddresses = repository.findByCustomerIdOrderByProcTsDesc(customerId);
+		if(custAddresses != null && !custAddresses.isEmpty()) {
+			repository.deleteByCustomerId(customerId);
+		}
+	}
+
+	@Override
+	public void deleteByCustomerIdIn(List<String> customerIds) {
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		repository.deleteByCustomerIdIn(customerIds);
+	}
+
 }

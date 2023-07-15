@@ -25,6 +25,12 @@ public class SmartAddressWebUtil {
 	
 	public static final String DELETE_ADDRESS_OPERATION = "Delete address by id";
 	public static final String DELETE_ADDRESS = "api/addresses/{id}";
+	
+	public static final String DELETE_ADDRESS_BY_CUSTID_OPERATION = "Delete address by customer id";
+	public static final String DELETE_ADDRESS_BY_CUSTID = "api/addresses/customer/{custId}";
+	
+	public static final String DELETE_ADDRESS_BY_CUSTIDS_OPERATION = "Delete address by customer id list";
+	public static final String DELETE_ADDRESS_BY_CUSTIDS = "api/addresses/customer/bulk-delete";
 
 	private SmartAddressWebUtil() {
 	}

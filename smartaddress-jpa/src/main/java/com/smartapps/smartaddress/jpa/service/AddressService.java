@@ -21,5 +21,7 @@ public interface AddressService {
 	
 	/* Delete */
 	public void deleteById(final Integer id);
+	public void deleteByCustomerId(final String customerId);
+	public void deleteByCustomerIdIn(final List<String> customerIds);
 
 }

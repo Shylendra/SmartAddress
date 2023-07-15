@@ -12,4 +12,6 @@ public interface AddressRepository extends JpaRepository<Address, Integer> {
 	List<Address> findAllByOrderByProcTsDesc();
 	List<Address> findByCustomerIdOrderByProcTsDesc(final String customerId);
 	List<Address> findByCustomerIdAndProcAppIdOrderByProcTsDesc(final String customerId, final String appId);
+	void deleteByCustomerId(String customerId);
+	void deleteByCustomerIdIn(List<String> customerIds);
 }

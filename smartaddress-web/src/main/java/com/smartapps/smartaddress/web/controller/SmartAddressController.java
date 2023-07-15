@@ -135,5 +135,41 @@ public class SmartAddressController extends CommonController {
 		addressServiceFacade.deleteById(id);
 		return ResponseEntity.ok().body("DELETED");
 	}
+
+	@Operation(summary = SmartAddressWebUtil.DELETE_ADDRESS_BY_CUSTID_OPERATION)
+	@GlobalApiReponsesDelete
+	@DeleteMapping(SmartAddressWebUtil.DELETE_ADDRESS_BY_CUSTID)
+	public ResponseEntity<String> deleteByCustomerId(
+			@RequestHeader(value = SmartHttpUtil.APP_ID_HEADER, required = true) @ValidAppId String appId,
+			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
+			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = false) String userGroups,
+			@PathVariable("custId") @Valid String custId) {
+		
+		/** Logging **/
+		MDC.put(SmartHttpUtil.APP_ID_HEADER, appId);
+		MDC.put(SmartHttpUtil.USER_ID_HEADER, userId);
+		MDC.put(SmartHttpUtil.USER_GROUPS_HEADER, userGroups);
+
+		addressServiceFacade.deleteByCustomerId(custId);
+		return ResponseEntity.ok().body("DELETED");
+	}
+
+	@Operation(summary = SmartAddressWebUtil.DELETE_ADDRESS_BY_CUSTIDS_OPERATION)
+	@GlobalApiReponsesPost
+	@PostMapping(SmartAddressWebUtil.DELETE_ADDRESS_BY_CUSTIDS)
+	public ResponseEntity<String> deleteByCustomerIdIn(
+			@RequestHeader(value = SmartHttpUtil.APP_ID_HEADER, required = true) @ValidAppId String appId,
+			@RequestHeader(value = SmartHttpUtil.USER_ID_HEADER, required = true) String userId,
+			@RequestHeader(value = SmartHttpUtil.USER_GROUPS_HEADER, required = false) String userGroups,
+			@Parameter(name = "custIds", required = true) @Valid @RequestBody List<String> custIds) {
+		
+		/** Logging **/
+		MDC.put(SmartHttpUtil.APP_ID_HEADER, appId);
+		MDC.put(SmartHttpUtil.USER_ID_HEADER, userId);
+		MDC.put(SmartHttpUtil.USER_GROUPS_HEADER, userGroups);
+
+		addressServiceFacade.deleteByCustomerIdIn(custIds);
+		return ResponseEntity.ok().body("DELETED");
+	}
 	
 }

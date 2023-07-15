@@ -173,4 +173,24 @@ public class AddressServiceFacadeImpl extends CommonServiceFacade implements Add
 		addressService.deleteById(id);
 	}
 
+	@Override
+	public void deleteByCustomerId(String customerId) {
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		addressService.deleteByCustomerId(customerId);
+	}
+
+	@Override
+	public void deleteByCustomerIdIn(List<String> customerIds) {
+		log.info(messageService.getMessage(
+				SharedMessages.LOG001_PREFIX, 
+				new Object[]{
+						this.getClass().getSimpleName(), 
+						new Object(){}.getClass().getEnclosingMethod().getName()}));
+		addressService.deleteByCustomerIdIn(customerIds);
+	}
+
 }
