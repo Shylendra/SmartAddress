@@ -13831,3 +13831,345 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2023-07-09 07:57:24.357 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2023-07-09 08:02:24.360 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2023-07-09 08:07:24.371 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+#logback.classic pattern: %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{45} - %msg%n
+2023-07-15 20:23:33.017 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2023-07-15 20:23:33.024 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Starting SmartaddressApplication using Java 1.8.0_291 on DESKTOP-1C84R2R with PID 28880 (C:\Users\shyle\git\SmartAddress\smartaddress-web\target\classes started by shyle in C:\Users\shyle\git\SmartAddress\smartaddress-web)
+2023-07-15 20:23:33.026 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - No active profile set, falling back to default profiles: default
+2023-07-15 20:23:37.332 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-15 20:23:37.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 587 ms. Found 1 JPA repository interfaces.
+2023-07-15 20:23:41.385 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=82b813f8-299c-3ac1-a255-4d880a69cdf1
+2023-07-15 20:23:44.771 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2023-07-15 20:23:44.799 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2023-07-15 20:23:44.801 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-15 20:23:44.801 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-07-15 20:23:45.474 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-15 20:23:45.474 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12324 ms
+2023-07-15 20:23:48.791 [main] INFO  o.e.s.o.t.o.p.UpfrontAllocatingPageSource - Allocating 100.0MB in chunks
+2023-07-15 20:23:48.954 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'thirty-minute-cache' created in EhcacheManager.
+2023-07-15 20:23:49.112 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2023-07-15 20:23:49.124 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Users/shyle/git/SmartAddress/smartaddress-web/target/classes/ehcache.xml,Cache=thirty-minute-cache
+2023-07-15 20:23:49.539 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-15 20:23:52.640 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-15 20:23:53.356 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-15 20:23:53.726 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+2023-07-15 20:23:54.284 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-15 20:23:54.709 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-15 20:23:57.057 [main] INFO  o.h.e.t.j.p.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-15 20:23:57.074 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-15 20:23:57.217 [main] INFO  c.s.smartaddress.web.config.MainConfig - Load MainConfig ***
+2023-07-15 20:23:57.217 [main] INFO  c.s.smartaddress.web.config.MainConfig - JNDI: null
+2023-07-15 20:24:08.758 [main] INFO  o.s.b.a.endpoint.web.EndpointLinksResolver - Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-07-15 20:24:10.991 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-07-15 20:24:11.250 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-15 20:24:11.449 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-07-15 20:24:11.749 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-07-15 20:24:11.775 [main] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-07-15 20:24:11.983 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-07-15 20:24:11.983 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-07-15 20:24:11.983 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-07-15 20:24:11.983 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-07-15 20:24:11.984 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-07-15 20:24:11.984 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-07-15 20:24:11.984 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-07-15 20:24:13.186 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-07-15 20:24:13.192 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-07-15 20:24:13.197 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-07-15 20:24:13.205 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1689416653204 with initial instances count: 1
+2023-07-15 20:24:13.210 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SMARTADDRESS with eureka with status UP
+2023-07-15 20:24:13.212 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1689416653212, current=UP, previous=STARTING]
+2023-07-15 20:24:13.217 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2023-07-15 20:24:13.218 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SMARTADDRESS/DESKTOP-1C84R2R:SmartAddress:8082: registering service...
+2023-07-15 20:24:13.280 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2023-07-15 20:24:13.281 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8082
+2023-07-15 20:24:13.394 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SMARTADDRESS/DESKTOP-1C84R2R:SmartAddress:8082 - registration status: 204
+2023-07-15 20:24:14.091 [main] INFO  c.s.smartaddress.web.SmartaddressApplication - Started SmartaddressApplication in 43.744 seconds (JVM running for 49.559)
+2023-07-15 20:25:02.830 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-15 20:25:02.830 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-15 20:25:02.831 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-15 20:25:02.972 [http-nio-8082-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2023-07-15 20:25:02.973 [http-nio-8082-exec-1] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2023-07-15 20:25:03.136 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.address_type as address11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.postal_code as postal_16_0_, address0_.start_date as start_d17_0_, address0_.state as state18_0_ from smart_address address0_ order by address0_.proc_ts desc
+2023-07-15 20:25:03.339 [http-nio-8082-exec-1] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 34,
+  "customerId" : "SUN001353",
+  "addressType" : "RESIDENTIAL",
+  "addressLine1" : "ssdf",
+  "addressLine2" : "sfdsdf",
+  "city" : "DENMAN PROSPECT",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-06-09",
+  "endDate" : "2023-06-09"
+}, {
+  "id" : 24,
+  "customerId" : "SUN001352",
+  "addressType" : "BUSINESS",
+  "addressLine1" : "Unit 48",
+  "addressLine2" : "12 Dover court",
+  "city" : "PHILLIP",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-02-16",
+  "endDate" : "2023-02-16"
+}, {
+  "id" : 23,
+  "customerId" : "SUN001352",
+  "addressType" : "RESIDENTIAL",
+  "addressLine1" : "48/12",
+  "addressLine2" : "DOVER COURT",
+  "city" : "PHILLIP",
+  "state" : "VIC",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-02-16",
+  "endDate" : "2023-02-16"
+}, {
+  "id" : 22,
+  "customerId" : "SUN001353",
+  "addressType" : "BUSINESS",
+  "addressLine1" : "85 ADA NORRIS AVENUE",
+  "addressLine2" : "Ada Norris Avenue",
+  "city" : "CANBERRA",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-02-16",
+  "endDate" : "2023-02-16"
+}, {
+  "id" : 21,
+  "customerId" : "SUN000756",
+  "addressType" : "RESIDENTIAL",
+  "addressLine1" : "85 ADA NORRIS AVENUE",
+  "addressLine2" : "DENMAN PROSPECT",
+  "city" : "CANBERRA",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-01-18",
+  "endDate" : "2023-01-18"
+}, {
+  "id" : 20,
+  "customerId" : "SUN000253",
+  "addressType" : "TTYPE",
+  "addressLine1" : "85",
+  "addressLine2" : "Ada Norris Avenue",
+  "city" : "DENMAN PROSPECT",
+  "state" : "SA",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-01-11",
+  "endDate" : "2023-01-11"
+}, {
+  "id" : 19,
+  "customerId" : "SUN000252",
+  "addressType" : "BILLING",
+  "addressLine1" : "Unit 48",
+  "addressLine2" : "12 Dover court",
+  "city" : "PHILLIP",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-01-09",
+  "endDate" : "2023-01-09"
+}, {
+  "id" : 17,
+  "customerId" : "SUN000253",
+  "addressType" : "BUSINESS",
+  "addressLine1" : "48/12",
+  "addressLine2" : "DOVER COURT",
+  "city" : "PHILLIP",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-01-09",
+  "endDate" : "2023-01-09"
+}, {
+  "id" : 16,
+  "customerId" : "SUN000253",
+  "addressType" : "SHIPPING",
+  "addressLine1" : "85",
+  "addressLine2" : "Ada Norris Avenue",
+  "city" : "DENMAN PROSPECT",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-01-09",
+  "endDate" : "2023-01-09"
+} ]
+2023-07-15 20:25:46.527 [http-nio-8082-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() REQUEST ***]: 
+ {
+  "id" : 0,
+  "customerId" : "2",
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}
+2023-07-15 20:25:46.529 [http-nio-8082-exec-2] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::create() ***]:
+2023-07-15 20:25:46.614 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - insert into smart_address (proc_app_id, proc_ts, proc_user_id, proc_user_ip_address, proc_user_latitude, proc_user_longitude, vers_id, address_line1, address_line2, address_type, city, country, customer_id, end_date, postal_code, start_date, state) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-07-15 20:25:46.618 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [SMART_APP1]
+2023-07-15 20:25:46.618 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2023-07-15 20:25:46.527]
+2023-07-15 20:25:46.623 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [testUser]
+2023-07-15 20:25:46.623 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [0:0:0:0:0:0:0:1]
+2023-07-15 20:25:46.623 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [1.1.1.1]
+2023-07-15 20:25:46.623 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - [1.1.1.1]
+2023-07-15 20:25:46.624 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [0]
+2023-07-15 20:25:46.625 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [fn3]
+2023-07-15 20:25:46.626 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [fn3]
+2023-07-15 20:25:46.626 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [10] as [VARCHAR] - [PERMANENT]
+2023-07-15 20:25:46.626 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [11] as [VARCHAR] - [fn3]
+2023-07-15 20:25:46.626 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [12] as [VARCHAR] - [fn3]
+2023-07-15 20:25:46.626 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [13] as [VARCHAR] - [2]
+2023-07-15 20:25:46.627 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [14] as [DATE] - [2022-02-26]
+2023-07-15 20:25:46.628 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [15] as [VARCHAR] - [fn3]
+2023-07-15 20:25:46.628 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [16] as [DATE] - [2022-02-26]
+2023-07-15 20:25:46.628 [http-nio-8082-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [17] as [VARCHAR] - [fn3]
+2023-07-15 20:25:46.760 [http-nio-8082-exec-2] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::register() RESPONSE ***]: 
+ {
+  "id" : 35,
+  "customerId" : "2",
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}
+2023-07-15 20:25:53.524 [http-nio-8082-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() ***]:
+2023-07-15 20:25:53.524 [http-nio-8082-exec-3] INFO  c.s.s.jpa.service.AddressServiceImpl - [*** SMARTADDRESS-API::AddressServiceImpl::readAll() ***]:
+2023-07-15 20:25:53.524 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select address0_.id as id1_0_, address0_.proc_app_id as proc_app2_0_, address0_.proc_ts as proc_ts3_0_, address0_.proc_user_id as proc_use4_0_, address0_.proc_user_ip_address as proc_use5_0_, address0_.proc_user_latitude as proc_use6_0_, address0_.proc_user_longitude as proc_use7_0_, address0_.vers_id as vers_id8_0_, address0_.address_line1 as address_9_0_, address0_.address_line2 as address10_0_, address0_.address_type as address11_0_, address0_.city as city12_0_, address0_.country as country13_0_, address0_.customer_id as custome14_0_, address0_.end_date as end_dat15_0_, address0_.postal_code as postal_16_0_, address0_.start_date as start_d17_0_, address0_.state as state18_0_ from smart_address address0_ order by address0_.proc_ts desc
+2023-07-15 20:25:53.536 [http-nio-8082-exec-3] INFO  c.s.s.w.s.facade.AddressServiceFacadeImpl - [*** SMARTADDRESS-API::AddressServiceFacadeImpl::retrieveAll() RESPONSE ***]: 
+ [ {
+  "id" : 35,
+  "customerId" : "2",
+  "addressType" : "PERMANENT",
+  "addressLine1" : "fn3",
+  "addressLine2" : "fn3",
+  "city" : "fn3",
+  "state" : "fn3",
+  "country" : "fn3",
+  "postalCode" : "fn3",
+  "startDate" : "2022-02-26",
+  "endDate" : "2022-02-26"
+}, {
+  "id" : 34,
+  "customerId" : "SUN001353",
+  "addressType" : "RESIDENTIAL",
+  "addressLine1" : "ssdf",
+  "addressLine2" : "sfdsdf",
+  "city" : "DENMAN PROSPECT",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-06-09",
+  "endDate" : "2023-06-09"
+}, {
+  "id" : 24,
+  "customerId" : "SUN001352",
+  "addressType" : "BUSINESS",
+  "addressLine1" : "Unit 48",
+  "addressLine2" : "12 Dover court",
+  "city" : "PHILLIP",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-02-16",
+  "endDate" : "2023-02-16"
+}, {
+  "id" : 23,
+  "customerId" : "SUN001352",
+  "addressType" : "RESIDENTIAL",
+  "addressLine1" : "48/12",
+  "addressLine2" : "DOVER COURT",
+  "city" : "PHILLIP",
+  "state" : "VIC",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-02-16",
+  "endDate" : "2023-02-16"
+}, {
+  "id" : 22,
+  "customerId" : "SUN001353",
+  "addressType" : "BUSINESS",
+  "addressLine1" : "85 ADA NORRIS AVENUE",
+  "addressLine2" : "Ada Norris Avenue",
+  "city" : "CANBERRA",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-02-16",
+  "endDate" : "2023-02-16"
+}, {
+  "id" : 21,
+  "customerId" : "SUN000756",
+  "addressType" : "RESIDENTIAL",
+  "addressLine1" : "85 ADA NORRIS AVENUE",
+  "addressLine2" : "DENMAN PROSPECT",
+  "city" : "CANBERRA",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-01-18",
+  "endDate" : "2023-01-18"
+}, {
+  "id" : 20,
+  "customerId" : "SUN000253",
+  "addressType" : "TTYPE",
+  "addressLine1" : "85",
+  "addressLine2" : "Ada Norris Avenue",
+  "city" : "DENMAN PROSPECT",
+  "state" : "SA",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-01-11",
+  "endDate" : "2023-01-11"
+}, {
+  "id" : 19,
+  "customerId" : "SUN000252",
+  "addressType" : "BILLING",
+  "addressLine1" : "Unit 48",
+  "addressLine2" : "12 Dover court",
+  "city" : "PHILLIP",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-01-09",
+  "endDate" : "2023-01-09"
+}, {
+  "id" : 17,
+  "customerId" : "SUN000253",
+  "addressType" : "BUSINESS",
+  "addressLine1" : "48/12",
+  "addressLine2" : "DOVER COURT",
+  "city" : "PHILLIP",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2606",
+  "startDate" : "2023-01-09",
+  "endDate" : "2023-01-09"
+}, {
+  "id" : 16,
+  "customerId" : "SUN000253",
+  "addressType" : "SHIPPING",
+  "addressLine1" : "85",
+  "addressLine2" : "Ada Norris Avenue",
+  "city" : "DENMAN PROSPECT",
+  "state" : "ACT",
+  "country" : "Australia",
+  "postalCode" : "2611",
+  "startDate" : "2023-01-09",
+  "endDate" : "2023-01-09"
+} ]
+2023-07-15 20:29:12.002 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
