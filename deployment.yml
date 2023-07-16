@@ -18,6 +18,7 @@ spec:
         - name: smartaddress-api
           image: shylendra2015/smartaddress-api:latest
           imagePullPolicy: Always
+          args: ["--spring.profiles.active=dev"]
           ports:
             - containerPort: 8082
 
